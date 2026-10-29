@@ -36,6 +36,8 @@
 .order-accent{width:6px;height:72px;flex:none;background:#19b473}.order-banner-content{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}.order-banner-heading{display:flex;align-items:flex-start;justify-content:space-between}.order-banner-heading strong{font-size:14px;font-weight:700;line-height:19.6px;color:#19b473;white-space:nowrap}.order-direction{margin-left:0}.order-banner.short .order-accent{background:#f53d55}.order-banner.short strong{color:#f53d55}.order-banner-close{border:0;background:none;padding:0;width:14px;height:14px;display:block;transform:none!important;position:relative}.order-banner-close:before{content:'';position:absolute;inset:-6px}.order-banner-close>span{display:block;position:relative;width:14px;height:14px}.order-banner-close img{position:absolute;left:20.56%;top:18.89%}.order-banner-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 6px;font-size:11px;line-height:15.4px}.order-banner-grid>div{display:flex;gap:6px;white-space:nowrap}.order-banner-grid span{color:#a9adb3}.order-banner-grid b{font-weight:500;color:#f4f7ff}
 @media(prefers-reduced-motion:reduce){.order-banner,.order-banner.show{transition:none;transform:none}}
 
+.amountlabel{text-decoration:none}.amount{line-height:78px}.confirmamount{line-height:78px;white-space:nowrap}.amount-measure{position:absolute;left:0;top:0;visibility:hidden;pointer-events:none;white-space:pre;font-size:56px;font-weight:800;letter-spacing:0;font-variant-numeric:tabular-nums;width:max-content}
+
 /* Figma glass parameters: blue 80%, blur 4, refraction .8, depth 20. */
 .trade{background:rgba(15,94,252,.8);border:0;box-shadow:none;font-weight:500;line-height:1.4;overflow:hidden;isolation:isolate;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
 .trade::before{content:none}
@@ -129,8 +131,16 @@ window.demoTrade = (() => {
  function closeFlow(){dismissModal();closeSettings();flow.inert=true;flow.classList.remove('open');$('.trade').focus({preventScroll:true});flow.setAttribute('aria-hidden','true');resetSwipe()}
  function closeSettings(){const pop=$('.settings-pop');pop.classList.remove('open');pop.setAttribute('aria-hidden','true');$('.settings').setAttribute('aria-expanded','false')}
  function settings(){let isOpen=$('.settings-pop').classList.toggle('open');$('.settings-pop').setAttribute('aria-hidden',String(!isOpen));$('.settings').setAttribute('aria-expanded',String(isOpen))}
- function sanitize(raw){let v=String(raw).replace(/[^\d.]/g,'');let parts=v.split('.');let whole=(parts[0]||'').replace(/^0+(?=\d)/,'').slice(0,7);return parts.length>1?(whole||'0')+'.'+parts[1].slice(0,2):whole}
- function setAmount(v){state.amount=sanitize(v);$('#amount').value=state.amount;$('.amount-error').textContent='';$('#amount').removeAttribute('aria-invalid');sync()}
+ function sanitize(raw,maxDigits=7){let v=String(raw).replace(/[^\d.]/g,'');let parts=v.split('.');let whole=(parts[0]||'').replace(/^0+(?=\d)/,'').slice(0,maxDigits);return parts.length>1?(whole||'0')+'.'+parts[1].slice(0,Math.min(2,Math.max(0,maxDigits-(whole||'0').length))):whole}
+ // Measure the actual rendered digits, so resizing starts only when the row is full.
+ const amountMeasure=document.createElement('span');amountMeasure.className='amount-measure';amountMeasure.setAttribute('aria-hidden','true');stage.append(amountMeasure);
+ const amountFitCache=new WeakMap();
+ function fitAmountText(el,text){const style=getComputedStyle(el),available=Math.max(1,Math.min(343,el.clientWidth)-4),key=text+'|'+available+'|'+style.fontFamily;if(amountFitCache.get(el)===key)return;
+ amountMeasure.style.fontFamily=style.fontFamily;amountMeasure.style.fontWeight=style.fontWeight;amountMeasure.textContent=text;
+ const measured=amountMeasure.offsetWidth,size=Math.min(56,Math.floor(56*available/Math.max(1,measured)*10)/10);el.style.fontSize=size+'px';amountFitCache.set(el,key);
+ }
+ document.fonts.ready.then(()=>{amountFitCache.delete($('#amount'));amountFitCache.delete($('.confirmamount'));sync()});
+ function setAmount(v){state.amount=sanitize(v,13);$('#amount').value=state.amount;$('.amount-error').textContent='';$('#amount').removeAttribute('aria-invalid');sync()}
  function pressKey(k){if(k==='delete')setAmount(state.amount.slice(0,-1));else if(k==='.'&&state.amount.includes('.'))return;else setAmount(state.amount+k)}
  function setSide(side){state.side=side;sync()}
  function setMode(percent){state.percent=percent;$('.mode-switch').classList.toggle('is-fixed',!percent);$('[data-action=percent-mode]').setAttribute('aria-pressed',String(percent));$('[data-action=fixed-mode]').setAttribute('aria-pressed',String(!percent));$$('[data-quick]').forEach((b,i)=>{b.textContent=presets[percent?'percent':'fixed'][i]+(percent?'%':'U')})}
@@ -140,7 +150,7 @@ window.demoTrade = (() => {
  function error(text){$('.amount-error').textContent=text;$('#amount').setAttribute('aria-invalid','true');if(!reduced)$('#amount').animate([{transform:'translateX(0)'},{transform:'translateX(-4px)'},{transform:'translateX(4px)'},{transform:'translateX(0)'}],{duration:160});}
  function sync(){const v=amount(),quantity=v*state.leverage/(state.page==='confirm'?state.anchor:n),liq=state.anchor*(1+(state.side==='long'?-1:1)*(1/state.leverage-.005));
  if($('#amount').value!==state.amount)$('#amount').value=state.amount;$('#amount').classList.toggle('has-value',v>0);
- $('#amount').style.fontSize=state.amount.length>8?'43px':'56px';$('.confirmamount').textContent=v?f2(v):'0.00';$('.confirmamount').style.fontSize=state.amount.length>8?'43px':'56px';
+ fitAmountText($('#amount'),state.amount||'0.00');$('.confirmamount').textContent=v?f2(v):'0.00';fitAmountText($('.confirmamount'),$('.confirmamount').textContent);
  $$('.amount-small').forEach(el=>el.textContent=v.toFixed(2));$$('.btc-est').forEach(el=>el.textContent=quantity.toFixed(4));$('.fee').textContent=(v*state.leverage*.0006).toFixed(8)+' USDT';$('.liquidation').textContent=f2(Math.max(0,liq))+' USDT';$('.liquidation-note').textContent=(state.side==='long'?'下跌':'上涨')+'约 '+Math.max(0,(1/state.leverage-.005)*100).toFixed(1)+'% 强平';
  $$('.flow-live,.position-mark').forEach(el=>el.textContent=format(n));$('.flow-change').textContent=(n-81353.6>=0?'+':'')+(n-81353.6).toFixed(2)+' ('+((n/81353.6-1)*100).toFixed(2)+'%)';
  $('.leverage-label').textContent=state.leverage+'x 杠杆';$('.leverage-tag').textContent=state.leverage+'X';$('.margin-tag').textContent=state.margin;$('.margin-pop-label').firstChild.textContent=state.margin+' ';$('.side-tag').textContent=state.side==='long'?'多':'空';$('.side-tag').style.background=state.side==='long'?'#19b473':'#f53d55';
