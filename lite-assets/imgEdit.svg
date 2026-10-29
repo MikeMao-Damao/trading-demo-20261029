@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="16.6334" height="16.2667" viewBox="0 0 16.6334 16.2667" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Edit">
+<mask id="stroke0_0_1793" fill="white">
+<path d="M0.133356 2.51667H13.8098C15.3692 2.51667 16.6334 3.7808 16.6334 5.3402V13.4431C16.6334 15.0025 15.3692 16.2667 13.8098 16.2667H2.95688C1.39749 16.2667 0.133356 15.0025 0.133356 13.4431V2.51667Z"/>
+</mask>
+<path id="Rectangle 34627247" d="M0.133356 2.51667H13.8098C15.3692 2.51667 16.6334 3.7808 16.6334 5.3402V13.4431C16.6334 15.0025 15.3692 16.2667 13.8098 16.2667H2.95688C1.39749 16.2667 0.133356 15.0025 0.133356 13.4431V2.51667Z" stroke-width="3.2" stroke="#A9ADB3" mask="url(#stroke0_0_1793)"/>
+<g id="Rectangle 34627246">
+</g>
+<mask id="stroke1_0_1793" maskUnits="userSpaceOnUse" x="-0.4" y="-0.4" width="11" height="5" fill="black">
+<rect fill="white" x="-0.4" y="-0.4" width="11" height="5"/>
+<path d="M1.6 2.51667C1.6 2.01041 2.01041 1.6 2.51667 1.6H7.1C7.60626 1.6 8.01667 2.01041 8.01667 2.51667V2.51667H1.6V2.51667Z"/>
+</mask>
+<path id="Rectangle 34627249" d="M8.01667 2.51667V2.51667C8.01667 2.01041 7.60626 1.6 7.1 1.6H2.51667C2.01041 1.6 1.6 2.01041 1.6 2.51667V2.51667H8.01667Z" stroke-width="3.2" stroke="#A9ADB3" mask="url(#stroke1_0_1793)"/>
+</g>
+</svg>
