@@ -66,18 +66,187 @@
 .switch .lite,.base-switch .go-lite{background:transparent;font-size:12px;font-weight:800;font-style:italic;line-height:17px}
 .base-switch .go-lite{color:#838a97}.base-switch .base-current img{filter:brightness(0) invert(1)}
 .base-view,.base-view.open{transition:none;transform:none}
-</style></head><body><svg class="glass-filter-defs" width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs><filter id="trade-glass-refraction" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feImage href="data:image/png;base64,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" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="refractionMap"/><feDisplacementMap in="SourceGraphic" in2="refractionMap" scale="20" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg><div class="wrap"><div class="phone"><div class="scroller"><div class="page"><div class="status"><span class="time">9:41</span><img class="sys" src="lite-assets/imgContainer.svg" alt=""></div><div class="nav"><b>USDT合约</b><span>USDC合约</span><span class="new">事件合约</span><span>跟单</span><span>交易机器人</span></div><div class="pair"><div class="pair-title"><b>BTCUSDT</b><small>永续<img src="lite-assets/img4.svg" alt=""></small></div><div class="live"><span>$<span id="price">81,500.0</span></span><span>+0.18%</span></div><div class="switch"><span class="grid"><img src="lite-assets/imgVector2.svg" alt=""></span><span class="lite">Lite</span></div></div><div class="chart"><img class="area" src="lite-assets/imgVector.svg" alt=""><img class="line" src="lite-assets/imgVector1.svg" alt=""><canvas class="tail" id="tail" width="38" height="54"></canvas><div class="axis"><span>81,892.58</span><span>81,772.93</span><span class="green">81,635.92</span><span>81,053.32</span><span>80,771.38</span></div><div class="dashed"></div><div class="dashed red"></div><div class="tag"><i>0.001</i><span>+6.88</span></div><div class="tag red"><i>止损</i><span>-6.88</span></div><div class="last" id="chartprice">81,500.0</div><div class="stop">81,100.0</div><div class="dot"></div><div class="times"><span>11:30</span><span>13:40</span><span>15:50</span><span>18:00</span></div></div><div class="period"><button class="on">Time</button><button>5m</button><button>15m</button><button>1h</button><button>1D</button><button>1W</button><button>1M</button></div><div class="card high"><h2>Low / High</h2><div class="rangevalue" id="rangevalue">$81,500.00</div><div class="bar"><div class="barfill" id="barfill"></div><img id="rangemarker" src="lite-assets/imgVector3.svg" alt=""></div><div class="ends"><span>$80,771.38</span><span>$81,892.58</span></div><div class="linebreak"></div><div class="stat a"><span>24小时成交(BTC)</span><span id="volume">108,839.837</span></div><div class="stat b"><span>24成交量(USDT)</span><span>89.93 亿</span></div></div><div class="card positions"><div class="head"><h2>我的持仓</h2><button class="pill">所有币对 <img src="lite-assets/img5.svg" alt=""></button></div><div class="pos"><div><b>BTCUSDT</b><div class="tags"><span>多</span><span>40X</span></div></div><div class="right pnl"><b id="profit">+20 USDT</b><div class="pct" id="pct">+8.37%</div></div></div><div class="linebreak"></div><div class="pos"><div><b>DOGEUSDT</b><div class="tags short"><span>空</span><span>40X</span></div></div><div class="right loss"><b>-4,820 USDT</b><div class="pct">-8.37%</div></div></div></div><div class="card book"><div class="head"><h2>盘口</h2><button class="pill">0.001 <img src="lite-assets/img5.svg" alt=""></button></div><div class="ratio"><span class="green">B 85%</span><span class="redtext">14% S</span></div><div class="bookbar"></div><div class="booklabels"><span>数量(USDT)</span><span>价格</span><span>数量(USDT)</span></div><div id="rows"></div></div></div></div><div class="sticky-pair"><div class="pair"><div class="pair-title"><b>BTCUSDT</b><small>永续<img src="lite-assets/img4.svg" alt=""></small></div><div class="live"><span>$<span class="sticky-price">81,500.0</span></span><span>+0.18%</span></div><div class="switch"><span class="grid"><img src="lite-assets/imgVector2.svg" alt=""></span><span class="lite">Lite</span></div></div></div><div class="fixed"><button class="trade"><span class="trade-glass" aria-hidden="true"><span class="trade-glass-scene"></span></span><span class="trade-caption">交易<img src="lite-assets/imgVector4.svg" alt=""></span></button><div class="tabbar"><button class="tab"><span class="icon"><img src="lite-assets/imgEllipse8194.svg" alt=""><img src="lite-assets/imgUnion.svg" alt=""></span>首页</button><button class="tab"><span class="icon"><img src="lite-assets/imgVector5.svg" alt=""></span>行情</button><button class="tab active"><span class="icon"><img src="lite-assets/imgVector6.svg" alt=""></span><span class="hot">HOT</span>合约</button><button class="tab"><span class="icon"><img src="lite-assets/imgVector7.svg" alt=""></span>现货</button><button class="tab"><span class="icon"><img src="lite-assets/imgEdit.svg" alt=""><img src="lite-assets/imgVector8.svg" alt=""></span>资产</button></div><div class="home"></div></div><div class="base-view" aria-hidden="true"><div class="base-scroll"><div class="base-page"><div class="base-status"><span class="time">9:41</span><img class="sys" src="lite-assets/imgContainer.svg" alt=""></div><div class="base-nav"><b>USDT合约</b><span>USDC合约</span><span class="new">事件合约</span><span>跟单</span><span>交易机器人</span></div><div class="base-pair"><div class="base-pair-title"><b>BTCUSDT</b><small>永续<img src="lite-assets/base-dropdown.svg" alt=""></small></div><div class="base-live"><span>$<span class="base-price">81,500.0</span></span><span class="base-change">+0.18%</span></div><div class="base-switch"><button class="base-current" aria-label="Base 版本"><img src="lite-assets/base-imgVector.svg" alt=""></button><button class="go-lite">Lite</button></div></div><div class="basetools"><span><img src="lite-assets/base-imgVector1.svg" alt=""></span><span><img src="lite-assets/base-imgVector2.svg" alt=""></span><span><img src="lite-assets/base-imgVector3.svg" alt=""></span><span><img src="lite-assets/base-imgVector4.svg" alt=""></span></div><div class="basebook"><div class="funding">资金费率 / 结算时间<span>0.0857% / <span id="countdown">05:43:09</span></span></div><div class="basebookhead"><span>价格<br>(USDT)</span><span>累计 ±<br>USDT</span></div><div id="asks"></div><div class="base-mid"><span class="base-price">81,500.0</span><small><span class="base-price">81,500.0</span></small></div><div id="bids"></div><div class="ratio-base"><img src="lite-assets/base-ratio.svg" alt=""><span class="green">B 39%</span><span class="redtext">61% S</span></div><div class="precision-row"><button class="precision">0.1<img src="lite-assets/base-dropdown.svg" alt=""></button><button class="spread-button" aria-label="盘口排列"><span><i></i><img src="lite-assets/base-spread-green.svg" alt=""><i></i></span><span class="spread-right"><i></i><img src="lite-assets/base-spread-gray.svg" alt=""></span></button></div></div><div class="baseform"><div class="form-row form-top"><button>全仓</button><button>25X</button></div><div class="form-row open-close"><button class="selected" data-bmode="open">开仓</button><button data-bmode="close">平仓</button></div><button class="order-type"><img src="lite-assets/base-order-info.svg" alt=""><span class="order-label">限价委托</span><img class="order-arrow" src="lite-assets/base-down.svg" alt=""><img class="order-swap" src="lite-assets/base-order-swap.svg" alt=""></button><div class="field price-field"><label for="base-limit">价格(USDT)</label><button class="reset-price" aria-label="重置为当前价格"><img src="lite-assets/base-reset.svg" alt=""></button><input id="base-limit" inputmode="decimal" value="81500.0" aria-label="委托价格"><button class="suffix bbo" aria-label="使用最优报价">BBO</button></div><div class="field qty"><input id="base-qty" inputmode="decimal" placeholder="数量" aria-label="数量"><span class="suffix">BTC<img src="lite-assets/base-down.svg" alt=""></span></div><div class="base-slider"><div class="base-range-ticks"><i></i><i></i><i></i><i></i><i></i></div><input class="base-range" type="range" min="0" max="100" value="37.4" step="0.1" aria-label="仓位比例"><img class="base-range-art" src="lite-assets/base-range-thumb.svg" alt=""></div><div class="available-box"><div><span>可开</span><span><span class="green">0.0000</span>/<span class="redtext">0.0000</span> BTC</span></div><div><span>保证金</span><span class="base-margin">--/-- USDT</span></div><div><span>预估强平价</span><span class="base-liq">--/-- USDT</span></div></div><div class="available"><span>可用</span><strong>270859.56 USDT <i>⊕</i></strong></div><label class="stop-check"><input type="checkbox">止盈止损</label><button class="base-buy">买入开多</button><button class="base-sell">卖出开空</button><div class="expiration"><span>生效时间</span><span>GTC<img src="lite-assets/base-down.svg" alt=""></span></div></div><div class="basepositions"><div class="base-tabs"><button class="active">持仓</button><button>当前委托</button><button>交易机器人</button><div class="base-tab-icons"><button aria-label="持仓显示设置"><img src="lite-assets/base-footer-settings.svg" alt=""></button><button aria-label="历史订单"><img src="lite-assets/base-footer-orders.svg" alt=""></button></div></div><div class="base-empty"><strong>目前没有持仓</strong><span>您可以立即下单或者在帮助中心学习如何进行合约交易</span><div class="base-empty-actions"><button class="base-empty-trade"><i><img src="lite-assets/base-empty-trade.svg" alt=""></i>交易</button><button class="base-empty-help"><i><img src="lite-assets/base-empty-help.svg" alt=""></i>帮助中心</button></div></div></div></div></div><div class="base-fixed"></div><div class="base-toast" role="status">演示页面</div></div>
+/* Local update from Figma Lite方案二, 9:13894. */
+.page{height:calc(1169px + var(--book-extra,0px))}.high h2{font-size:13px}.high .rangevalue{color:#a9adb3;text-align:center;font-weight:500;top:38px}.high .bar{top:59px}.high .barfill{background:#67686a}.high #rangemarker{position:absolute;width:1px;height:10px;top:auto;bottom:0;background:#f4f7ff;transition:left 1s ease-out;pointer-events:none}.high .ends{top:74px}.high .ends span{font-size:12px}.high .ends span:first-child,.high .ends span:last-child{color:#838a97}
+.position-tabs{display:flex;gap:16px;height:18px}.position-tabs button{border:0;padding:0;background:none;color:#838a97;font-size:13px;font-weight:500;line-height:18px}.position-tabs button.active{color:#a9adb3}.position-empty{display:grid;place-items:center;height:110px;color:#838a97;font-size:12px}.positions.orders-view .pos,.positions.orders-view>.linebreak{display:none}.positions .position-empty{display:none}.positions.orders-view .position-empty{display:grid}
+.book{height:72px;overflow:hidden}.book .head{height:21px}.book-toggle{display:flex;gap:4px;align-items:center;font-size:13px;font-weight:500;color:#a9adb3;background:none;border:0;padding:0}.book-toggle img{transition:transform 180ms}.book .ratio{margin-top:8px;height:12px;line-height:14px}.book .booklabels,.book #rows{display:none}.book.expanded{height:508px}.book.expanded .booklabels{display:grid;margin-top:16px}.book.expanded #rows{display:block}.book.expanded .book-toggle img{transform:rotate(180deg)}
+.scan9-tools{top:calc(821.5px + var(--book-extra,0px));padding:0;height:240px;background:transparent}.scan9-tools p,.guide-page p{margin:0}.scan9-tools [role=button],.guide-page [role=button]{cursor:pointer;touch-action:manipulation}.scan9-tools [role=button]:active{opacity:.75}.scan9-tools [data-name="快捷功能"]{height:240px!important}
+.confirm-cost{position:absolute;top:35px;left:16px;width:343px;font-size:10px;line-height:14px;text-align:center;color:#a9adb3}.confirmamount{top:50px}.confirmestimate{top:128px}.coupon{display:flex!important;align-items:center;gap:6px!important;margin-left:0!important;font-size:12px!important;color:#f4f7ff!important}.coupon .coupon-value{color:#a9adb3}.coupon-menu{position:absolute;top:206px;left:140px;z-index:5;width:150px;padding:5px;border-radius:10px;background:#232529;border:1px solid #35363b;box-shadow:0 8px 20px #0009}.coupon-menu button{display:block;width:100%;border:0;background:none;text-align:left;padding:10px;font-size:12px}.coupon-menu[hidden]{display:none}
+.guide-layer{position:absolute;inset:0;z-index:38;visibility:hidden;pointer-events:none}.guide-layer.open{visibility:visible;pointer-events:auto}.guide-mask{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:rgba(0,0,0,.7);opacity:0;transition:opacity 180ms;transform:none!important}.guide-layer.open .guide-mask{opacity:1}.guide-stage{position:absolute;left:0;top:0;width:375px;height:812px;transform-origin:top left;pointer-events:none}.guide-page{position:absolute;inset:0;visibility:hidden;pointer-events:none}.guide-layer.open .guide-page.is-active{visibility:visible;pointer-events:auto}.guide-page>div{max-height:calc(100% - 20px);box-shadow:inset 0 1px 4px #ffffff26;border:1px solid #ffffff24}.guide-page [data-name="BG"]{pointer-events:none}.guide-page [data-name="Nav"]{cursor:grab}.guide-page a{color:inherit;text-decoration:none}.guide-page :focus-visible{outline:2px solid #438bff;outline-offset:2px}.guide-page [data-name="滑块"]{pointer-events:none}.guide-range{position:absolute;inset:0;width:100%;height:24px;opacity:0;margin:0;cursor:ew-resize;touch-action:none}.guide-page.replay [data-node-id="9:15572"],.guide-page.replay [data-node-id="9:15603"]{animation:guide-reveal 2.3s linear both}@keyframes guide-reveal{from{clip-path:inset(-24px 100% -24px -24px)}to{clip-path:inset(-24px -24px -24px -24px)}}
+@media(prefers-reduced-motion:reduce){.guide-page.replay *{animation:none!important}}
+
+.guide-page>div{border:0}
+
+.ptags{display:flex;gap:4px;align-items:center;height:16px}.ptags>b{width:16px;height:16px;text-align:center;padding:1px!important;font-size:10px;line-height:14px}.position-margin,.position-lev{background:#232529;color:#a9adb3;font-size:10px;border-radius:2px;height:16px;padding:1px 4px;border:0;line-height:14px}.position-lev{display:flex;align-items:center;gap:2px}.position-risk{display:flex;gap:1.6px;margin-left:1px;align-items:center;height:10px}.position-risk i{display:block;height:10px;width:1.6px;background:linear-gradient(#383e48 0 72%,transparent 72% 84%,#383e48 84%)}.position-risk i:first-child{background:linear-gradient(#19b473 0 72%,transparent 72% 84%,#19b473 84%)}.position-unit{background:#232529;padding:1px 4px;font-size:9px;border-radius:2px;color:#a9adb3}
+
+.position-sheet .profitline strong{font-size:20px;line-height:28px}.position-sheet .posmetrics b{font-size:14px;line-height:20px}
+
+.guide-progress{display:flex;align-items:center;justify-content:center;gap:8px;width:72px;height:8px}.guide-progress-dot{display:block;flex:0 0 8px;width:8px;height:8px;border-radius:50%;background:#383e48}.guide-progress-dot.is-current{background:#f4f7ff}
+
+.high .rangevalue{width:62px}
+.period{gap:6px;justify-content:flex-start}.period button[data-period]{flex:1;min-width:0;padding:0;font-size:10px;white-space:nowrap;transform:none!important}.period button[data-period="Time"]{flex:0 0 63px;font-size:11px;font-weight:500}.period button[data-period="Time"]:before{content:'●';color:#0f5efc;margin-right:6px}.period button[data-period]:not([data-period="Time"]):before{content:none}.period .on{padding:0}.period .chart-toggle{flex:0 0 40px;width:40px;height:26px;padding:0;display:grid;place-items:center;border:.5px solid transparent;border-radius:20px;transform:none!important;background:none}.chart-toggle-icon{position:relative;display:block;width:16px;height:16px}.chart-toggle-icon img{position:absolute;left:15.42%;top:8.33%}.period .chart-toggle[aria-pressed="true"]{background:#111216;border-color:#212324}.page.candle-mode .period .on{background:transparent;border-color:transparent}
+.candle-view{display:none;position:absolute;inset:0 auto auto 0;width:343px;height:212px;overflow:hidden;background:#000;color:#838a97;font-size:10px;line-height:14px;pointer-events:none}.page.candle-mode .candle-view{display:block}.page.candle-mode .chart>.area,.page.candle-mode .chart>.line,.page.candle-mode .chart>.tail,.page.candle-mode .chart>.axis,.page.candle-mode .chart>.last,.page.candle-mode .chart>.dot,.page.candle-mode .chart>.times{visibility:hidden}.chart>.tag,.chart>.dashed,.chart>.stop{z-index:2}.candle-plot{position:absolute;left:0;top:0;width:285px;height:188px;overflow:hidden}.candle-hgrid{position:absolute;left:-33px;top:-.5px}.candle-vgrid{position:absolute;left:-33px;top:0}.candle-history{position:absolute;left:-32.1px;top:30.08px;clip-path:inset(0 12px 0 0)}.candle-live{position:absolute;left:0;top:0;width:285px;height:188px}.candle-separator{position:absolute;left:-32px;top:187.5px}.candle-axis{position:absolute;left:291px;top:0;width:52px;height:191px;display:flex;flex-direction:column;justify-content:space-between;line-height:14px}.candle-axis span{white-space:nowrap}.candle-current{position:absolute;left:285px;top:90px;width:57px;height:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#2ebd85;color:#fff;font-size:10px;line-height:13px;font-weight:500;z-index:3;font-variant-numeric:tabular-nums}.candle-current.down{background:#f53d55}.candle-times{position:absolute;left:0;top:194px;height:14px;width:285px;color:#383e48;line-height:14px}.candle-times span{position:absolute;white-space:nowrap}.candle-times span:nth-child(1){left:61.65px}.candle-times span:nth-child(2){left:157.05px}.candle-times span:nth-child(3){left:252.45px}
+
+.candle-takeprofit{position:absolute;right:0;top:83px;z-index:3;color:#19b473;font-size:10px;line-height:14px}
+
+.page.candle-mode .period button[data-period="Time"]{color:#5d5e65}.chart-toggle .chart-icon-active{display:none}.chart-toggle[aria-pressed="true"] .chart-icon-idle{display:none}.chart-toggle[aria-pressed="true"] .chart-icon-active{display:block}
+.chart-toggle-icon{pointer-events:none}
+</style></head><body><svg class="glass-filter-defs" width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs><filter id="trade-glass-refraction" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feImage href="data:image/png;base64,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" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="refractionMap"/><feDisplacementMap in="SourceGraphic" in2="refractionMap" scale="20" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg><div class="wrap"><div class="phone"><div class="scroller"><div class="page"><div class="status"><span class="time">9:41</span><img class="sys" src="lite-assets/imgContainer.svg" alt=""></div><div class="nav"><b>USDT合约</b><span>USDC合约</span><span class="new">事件合约</span><span>跟单</span><span>交易机器人</span></div><div class="pair"><div class="pair-title"><b>BTCUSDT</b><small>永续<img src="lite-assets/img4.svg" alt=""></small></div><div class="live"><span>$<span id="price">81,500.0</span></span><span>+0.18%</span></div><div class="switch"><span class="grid"><img src="lite-assets/imgVector2.svg" alt=""></span><span class="lite">Lite</span></div></div><div class="chart"><div class="candle-view" aria-hidden="true"><div class="candle-plot"><img class="candle-hgrid" src="lite-assets/chart-candles-horizontal.svg" alt=""><img class="candle-vgrid" src="lite-assets/chart-candles-vertical.svg" alt=""><img class="candle-history" src="lite-assets/chart-candles-history.svg" alt=""><canvas class="candle-live" width="570" height="376" aria-label="实时蜡烛图"></canvas></div><img class="candle-separator" src="lite-assets/chart-candles-separator.svg" alt=""><div class="candle-axis" aria-hidden="true"></div><div class="candle-takeprofit">81,635.92</div><div class="candle-current"><span class="candle-price"></span><span class="candle-countdown"></span></div><div class="candle-times"><span>12:00</span><span>13:30</span><span>15:00</span></div></div>
+<img class="area" src="lite-assets/imgVector.svg" alt=""><img class="line" src="lite-assets/imgVector1.svg" alt=""><canvas class="tail" id="tail" width="38" height="54"></canvas><div class="axis"><span>81,892.58</span><span>81,772.93</span><span class="green">81,635.92</span><span>81,053.32</span><span>80,771.38</span></div><div class="dashed"></div><div class="dashed red"></div><div class="tag"><i>0.001</i><span>+6.88</span></div><div class="tag red"><i>止损</i><span>-6.88</span></div><div class="last" id="chartprice">81,500.0</div><div class="stop">81,100.0</div><div class="dot"></div><div class="times"><span>11:30</span><span>13:40</span><span>15:50</span><span>18:00</span></div></div><div class="period"><button class="on" data-period="Time">Time</button><button data-period="5m">5m</button><button data-period="15m">15m</button><button data-period="1h">1h</button><button data-period="1D">1D</button><button data-period="1W">1W</button><button data-period="1M">1M</button><button class="chart-toggle" aria-label="切换为蜡烛图" aria-pressed="false"><span class="chart-toggle-icon"><img class="chart-icon-idle" src="lite-assets/chart-candles-icon.svg" alt=""><img class="chart-icon-active" src="lite-assets/chart-candles-active.svg" alt=""></span></button></div><div class="card high"><h2>24h 高 / 低</h2><div class="rangevalue" id="rangevalue">$81,500.00</div><div class="bar"><div class="barfill" id="barfill"></div><span id="rangemarker" style="left:91px" aria-hidden="true"></span></div><div class="ends"><span>80,771.38</span><span>81,892.58</span></div><div class="linebreak"></div><div class="stat a"><span>24小时成交(BTC)</span><span id="volume">108,839.837</span></div><div class="stat b"><span>24成交量(USDT)</span><span>89.93 亿</span></div></div><div class="card positions"><div class="head"><div class="position-tabs"><button class="active" data-position-tab="positions">持仓</button><button data-position-tab="orders">委托</button></div><button class="pill">所有币对 <img src="lite-assets/img5.svg" alt=""></button></div><div class="pos"><div><b>BTCUSDT</b><div class="tags"><span>多</span><span>40X</span></div></div><div class="right pnl"><b id="profit">+20 USDT</b><div class="pct" id="pct">+8.37%</div></div></div><div class="linebreak"></div><div class="pos"><div><b>DOGEUSDT</b><div class="tags short"><span>空</span><span>40X</span></div></div><div class="right loss"><b>-4,820 USDT</b><div class="pct">-8.37%</div></div></div></div><div class="card book"><div class="head"><button class="book-toggle" aria-expanded="false">盘口<img src="lite-assets/flow-dropdown.svg" alt=""></button><button class="pill">0.001 <img src="lite-assets/img5.svg" alt=""></button></div><div class="ratio"><span class="green">B 85%</span><span class="redtext">14% S</span></div><div class="bookbar"></div><div class="booklabels"><span>数量(USDT)</span><span>价格</span><span>数量(USDT)</span></div><div id="rows"></div></div><div class="card scan9-tools"><div style="height:240px;position:relative;width:343px" data-node-id="9:13502" data-name="快捷功能">
+      <div style="position:absolute;background:#0d0d0d;align-content:stretch;display:flex;flex-direction:column;gap:8px;inset:0 0 51.67% 0;align-items:flex-start;overflow:hidden;padding:12px;border-radius:12px" data-node-id="9:13503">
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:13504" data-name="标题与周期">
+          <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="9:13505">
+            <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;color:#a9adb3;white-space:nowrap" data-node-id="9:13506">
+              合约信息
+            </p>
+          </div>
+        </div>
+        <div style="align-content:flex-start;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;position:relative;flex-shrink:0;width:100%" data-node-id="9:13510">
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13511" data-name="工具/XABCD 形态">
+            <div style="overflow:hidden;position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13512" data-name="Icon/Tutorial">
+              <div style="position:absolute;inset:9.17%" data-node-id="I9:13512;11489:11330" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13513">
+              新手指引
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13514" data-name="工具/XABCD 形态">
+            <div style="position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13515" data-name="Icon/Order">
+              <div style="position:absolute;inset:10.21% 11.25%" data-node-id="I9:13515;11489:7351" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector1.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13516">
+              订单历史
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13517" data-name="工具/XABCD 形态">
+            <div style="overflow:hidden;position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13518" data-name="Icon/Order1">
+              <div style="position:absolute;inset:9.17% 15.42%" data-node-id="I9:13518;11489:7360" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector2.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13519">
+              最新成交
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13520" data-name="工具/XABCD 形态">
+            <div style="overflow:hidden;position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13521" data-name="Icon/Feedback">
+              <div style="position:absolute;inset:9.17% 10.14% 9.17% 13.33%" data-node-id="I9:13521;11489:4505" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector3.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13522">
+              币种介绍
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13523" data-name="工具/XABCD 形态">
+            <div style="position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13524" data-name="Icon/Contract_Information">
+              <div style="position:absolute;height:10.813px;left:calc(50% - 6px);top:calc(50% - 5.47px);width:12.052px" data-node-id="I9:13524;11489:2514" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector4.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13525">
+              合约介绍
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13526" data-name="工具/XABCD 形态">
+            <div style="position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13527" data-name="Icon/Calculator">
+              <div style="position:absolute;inset:16.69% 16.67% 17.5% 16.67%" data-node-id="I9:13527;11489:1637" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector5.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13528">
+              计算器
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="position:absolute;background:#0d0d0d;align-content:stretch;display:flex;flex-direction:column;gap:8px;inset:51.67% 0 0 0;align-items:flex-start;overflow:hidden;padding:12px;border-radius:12px" data-node-id="9:13722">
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:13723" data-name="标题与周期">
+          <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="9:13724">
+            <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;color:#a9adb3;white-space:nowrap" data-node-id="9:13725">
+              更多
+            </p>
+          </div>
+        </div>
+        <div style="align-content:flex-start;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start;position:relative;flex-shrink:0;width:319px" data-node-id="9:13729">
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13730" data-name="工具/XABCD 形态">
+            <div style="overflow:hidden;position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13731" data-name="Icon/Bots">
+              <div style="position:absolute;inset:9.17% 5% 11.25% 5%" data-node-id="I9:13731;11489:1443" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector6.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13732">
+              策略交易
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13733" data-name="工具/XABCD 形态">
+            <div style="overflow:hidden;position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13734" data-name="Icon/Rewards_Hub">
+              <div style="position:absolute;inset:11.15% 10.14% 9.23% 8.19%" data-node-id="I9:13734;11489:9184" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector7.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13735">
+              专属活动
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13736" data-name="工具/XABCD 形态">
+            <div style="position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13737" data-name="Icon/Reminder">
+              <div style="position:absolute;inset:7.08% 12.5% 9.17% 12.5%" data-node-id="I9:13737;11489:8889" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector8.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13738">
+              提醒
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13741" data-name="工具/XABCD 形态">
+            <div style="position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13742" data-name="Icon/Stars">
+              <div style="position:absolute;inset:9.7% 8.44% 10.67% 8.44%" data-node-id="I9:13742;11489:10081" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector9.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13743">
+              自选
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;justify-content:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13744" data-name="工具/XABCD 形态">
+            <div style="position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13745" data-name="Icon/Customer_Service">
+              <div style="position:absolute;inset:12.5%" data-node-id="I9:13745;11489:3023" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgVector10.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13746">
+              客服
+            </p>
+          </div>
+          <div style="background:#1b1c1f;align-content:stretch;display:flex;gap:6px;align-items:center;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:6px;padding-bottom:6px;position:relative;border-radius:32px;flex-shrink:0" data-node-id="9:13747" data-name="工具/XABCD 形态">
+            <div style="position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="9:13748" data-name="AI Color">
+              <div style="position:absolute;inset:20.79% 10.73%" data-node-id="I9:13748;12280:136">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-14565-imgGroup2147221227.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:13749">
+              AI
+            </p>
+          </div>
+        </div>
+      </div>
+    </div></div></div></div><div class="sticky-pair"><div class="pair"><div class="pair-title"><b>BTCUSDT</b><small>永续<img src="lite-assets/img4.svg" alt=""></small></div><div class="live"><span>$<span class="sticky-price">81,500.0</span></span><span>+0.18%</span></div><div class="switch"><span class="grid"><img src="lite-assets/imgVector2.svg" alt=""></span><span class="lite">Lite</span></div></div></div><div class="fixed"><button class="trade"><span class="trade-glass" aria-hidden="true"><span class="trade-glass-scene"></span></span><span class="trade-caption">交易<img src="lite-assets/imgVector4.svg" alt=""></span></button><div class="tabbar"><button class="tab"><span class="icon"><img src="lite-assets/imgEllipse8194.svg" alt=""><img src="lite-assets/imgUnion.svg" alt=""></span>首页</button><button class="tab"><span class="icon"><img src="lite-assets/imgVector5.svg" alt=""></span>行情</button><button class="tab active"><span class="icon"><img src="lite-assets/imgVector6.svg" alt=""></span><span class="hot">HOT</span>合约</button><button class="tab"><span class="icon"><img src="lite-assets/imgVector7.svg" alt=""></span>现货</button><button class="tab"><span class="icon"><img src="lite-assets/imgEdit.svg" alt=""><img src="lite-assets/imgVector8.svg" alt=""></span>资产</button></div><div class="home"></div></div><div class="base-view" aria-hidden="true"><div class="base-scroll"><div class="base-page"><div class="base-status"><span class="time">9:41</span><img class="sys" src="lite-assets/imgContainer.svg" alt=""></div><div class="base-nav"><b>USDT合约</b><span>USDC合约</span><span class="new">事件合约</span><span>跟单</span><span>交易机器人</span></div><div class="base-pair"><div class="base-pair-title"><b>BTCUSDT</b><small>永续<img src="lite-assets/base-dropdown.svg" alt=""></small></div><div class="base-live"><span>$<span class="base-price">81,500.0</span></span><span class="base-change">+0.18%</span></div><div class="base-switch"><button class="base-current" aria-label="Base 版本"><img src="lite-assets/base-imgVector.svg" alt=""></button><button class="go-lite">Lite</button></div></div><div class="basetools"><span><img src="lite-assets/base-imgVector1.svg" alt=""></span><span><img src="lite-assets/base-imgVector2.svg" alt=""></span><span><img src="lite-assets/base-imgVector3.svg" alt=""></span><span><img src="lite-assets/base-imgVector4.svg" alt=""></span></div><div class="basebook"><div class="funding">资金费率 / 结算时间<span>0.0857% / <span id="countdown">05:43:09</span></span></div><div class="basebookhead"><span>价格<br>(USDT)</span><span>累计 ±<br>USDT</span></div><div id="asks"></div><div class="base-mid"><span class="base-price">81,500.0</span><small><span class="base-price">81,500.0</span></small></div><div id="bids"></div><div class="ratio-base"><img src="lite-assets/base-ratio.svg" alt=""><span class="green">B 39%</span><span class="redtext">61% S</span></div><div class="precision-row"><button class="precision">0.1<img src="lite-assets/base-dropdown.svg" alt=""></button><button class="spread-button" aria-label="盘口排列"><span><i></i><img src="lite-assets/base-spread-green.svg" alt=""><i></i></span><span class="spread-right"><i></i><img src="lite-assets/base-spread-gray.svg" alt=""></span></button></div></div><div class="baseform"><div class="form-row form-top"><button>全仓</button><button>25X</button></div><div class="form-row open-close"><button class="selected" data-bmode="open">开仓</button><button data-bmode="close">平仓</button></div><button class="order-type"><img src="lite-assets/base-order-info.svg" alt=""><span class="order-label">限价委托</span><img class="order-arrow" src="lite-assets/base-down.svg" alt=""><img class="order-swap" src="lite-assets/base-order-swap.svg" alt=""></button><div class="field price-field"><label for="base-limit">价格(USDT)</label><button class="reset-price" aria-label="重置为当前价格"><img src="lite-assets/base-reset.svg" alt=""></button><input id="base-limit" inputmode="decimal" value="81500.0" aria-label="委托价格"><button class="suffix bbo" aria-label="使用最优报价">BBO</button></div><div class="field qty"><input id="base-qty" inputmode="decimal" placeholder="数量" aria-label="数量"><span class="suffix">BTC<img src="lite-assets/base-down.svg" alt=""></span></div><div class="base-slider"><div class="base-range-ticks"><i></i><i></i><i></i><i></i><i></i></div><input class="base-range" type="range" min="0" max="100" value="37.4" step="0.1" aria-label="仓位比例"><img class="base-range-art" src="lite-assets/base-range-thumb.svg" alt=""></div><div class="available-box"><div><span>可开</span><span><span class="green">0.0000</span>/<span class="redtext">0.0000</span> BTC</span></div><div><span>保证金</span><span class="base-margin">--/-- USDT</span></div><div><span>预估强平价</span><span class="base-liq">--/-- USDT</span></div></div><div class="available"><span>可用</span><strong>270859.56 USDT <i>⊕</i></strong></div><label class="stop-check"><input type="checkbox">止盈止损</label><button class="base-buy">买入开多</button><button class="base-sell">卖出开空</button><div class="expiration"><span>生效时间</span><span>GTC<img src="lite-assets/base-down.svg" alt=""></span></div></div><div class="basepositions"><div class="base-tabs"><button class="active">持仓</button><button>当前委托</button><button>交易机器人</button><div class="base-tab-icons"><button aria-label="持仓显示设置"><img src="lite-assets/base-footer-settings.svg" alt=""></button><button aria-label="历史订单"><img src="lite-assets/base-footer-orders.svg" alt=""></button></div></div><div class="base-empty"><strong>目前没有持仓</strong><span>您可以立即下单或者在帮助中心学习如何进行合约交易</span><div class="base-empty-actions"><button class="base-empty-trade"><i><img src="lite-assets/base-empty-trade.svg" alt=""></i>交易</button><button class="base-empty-help"><i><img src="lite-assets/base-empty-help.svg" alt=""></i>帮助中心</button></div></div></div></div></div><div class="base-fixed"></div><div class="base-toast" role="status">演示页面</div></div>
 <div class="flow" id="flow" aria-hidden="true">
  <div class="flowstage">
   <div class="status"><span class="time">9:41</span><img class="sys" src="lite-assets/imgContainer.svg" alt=""></div>
   <header class="flowhead"><button class="back icon-button" data-action="back" aria-label="返回"><img src="lite-assets/flow-back.svg" alt=""></button><div class="flowheading"><div class="symbol"><img src="lite-assets/flow-btc.svg" alt=""><span>BTCUSDT</span><small>永续</small><img src="lite-assets/flow-dropdown.svg" alt=""></div><div class="flowprice">$<span class="flow-live">81,500.0</span><em class="flow-change">+146.4 (0.18%)</em></div></div><button class="settings icon-button" data-action="settings" aria-label="交易设置" aria-expanded="false"><img src="lite-assets/flow-settings.svg" alt=""></button></header>
   <section id="entry" class="trade-screen active" aria-label="输入交易金额">
    <div class="direction"><span class="direction-indicator"></span><button class="long selected" data-action="long" aria-pressed="true">开多</button><button class="short" data-action="short" aria-pressed="false">开空</button></div>
-   <div class="amountbox"><label class="amountlabel" for="amount">投入金额 USDT</label><input id="amount" class="amount" type="text" inputmode="none" autocomplete="off" placeholder="0.00" aria-label="投入金额"><div class="estimate">≈ <span class="btc-est">0.0000</span> BTC</div><div class="amount-rule"></div><button class="lev" data-action="leverage"><span class="leverage-label">2x 杠杆</span><img src="lite-assets/flow-dropdown.svg" alt=""></button><div class="balance">可用余额 <span>6,938 USDT</span><button data-action="balance" aria-label="可用余额说明">＋</button></div><div class="amount-error" aria-live="polite"></div></div>
+   <div class="amountbox"><label class="amountlabel" for="amount">投入金额 USDT</label><input id="amount" class="amount" type="text" inputmode="none" autocomplete="off" placeholder="0.00" aria-label="投入金额"><div class="estimate">≈ <span class="btc-est">0.0000</span> BTC</div><div class="amount-rule"></div><button class="lev" data-action="leverage"><span class="leverage-label">2x 杠杆</span><img src="lite-assets/flow-dropdown.svg" alt=""></button><div class="balance">可用余额 <span>6,938 USDT</span><button data-action="balance" aria-label="可用余额说明">＋</button><button class="coupon" data-action="coupon" aria-expanded="false">卡券 <span class="coupon-value">2USDT</span><img src="lite-assets/flow-dropdown.svg" alt=""></button></div><div class="coupon-menu" hidden><button data-coupon="2">2 USDT 卡券</button><button data-coupon="0">不使用卡券</button></div><div class="amount-error" aria-live="polite"></div></div>
    <button class="next" data-action="next" aria-label="继续"><img src="lite-assets/flow-next.svg" alt=""></button>
    <div class="input-bottom"><div class="quick"><div class="mode-switch"><span class="mode-indicator"></span><button data-action="percent-mode" aria-label="百分比模式">%</button><button data-action="fixed-mode" aria-label="固定金额模式">#</button></div><button data-quick="0">25%</button><button data-quick="1">50%</button><button data-quick="2">75%</button><button data-quick="3">100%</button><button class="quick-edit" data-action="edit-quick" aria-label="编辑快捷数值"><span class="quick-edit-icon"><img src="lite-assets/quick-edit.svg" alt=""></span></button></div><div class="keypad" aria-label="数字键盘"><button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button><button data-key="6">6</button><button data-key="4">4</button><button data-key="5">5</button><button data-key="8">8</button><button data-key="0">0</button><button data-key="7">7</button><button data-key=".">.</button><button data-key="9">9</button><button data-key="delete" aria-label="删除一位"><img src="lite-assets/flow-delete.svg" alt=""></button></div></div>
   </section>
-  <section id="confirm" class="trade-screen" aria-label="确认交易信息"><div class="confirmamount">0.00</div><div class="confirmestimate">≈ <span class="btc-est">0.0000</span> BTC</div><div class="confirmcard"><div class="title">BTCUSDT <span class="confirm-tags"><em class="side-tag">多</em><em class="margin-tag">逐仓</em><em class="leverage-tag">2X</em></span></div><div class="confirm-infos"><div class="info"><span>委托价格</span><span>市价</span></div><div class="info"><span>预计数量</span><span><span class="btc-est">0.0000</span> BTC</span></div><div class="info"><span>占用保证金</span><span><span class="amount-small">0.00</span> USDT</span></div><div class="info"><span>预估手续费</span><span class="fee">0.0000 USDT</span></div><div class="info liquidation-row"><span>预估强平价</span><span><span class="warn liquidation">41,500.00 USDT</span><small class="liquidation-note">下跌约 49% 强平</small></span></div></div></div><button class="addstop" data-action="stops"><span class="stop-summary">止盈止损</span><span class="stop-result"><span class="stop-values" hidden><span class="saved-tp"></span><span class="stop-separator"> / </span><span class="saved-sl"></span></span><span class="stop-plus">＋</span><span class="stop-edit" hidden><img src="lite-assets/quick-edit.svg" alt=""></span></span></button><div class="confirmbtn" role="button" tabindex="0" aria-label="向右滑动确认开仓"><span class="swipe-fill"></span><span class="confirmtext">确认开多</span><button class="swipe-knob" aria-label="拖动确认开仓"><img src="lite-assets/flow-next.svg" alt=""></button></div><button class="cancel" data-action="cancel">取消</button></section>
+  <section id="confirm" class="trade-screen" aria-label="确认交易信息"><div class="confirm-cost">成本 USDT</div><div class="confirmamount">0.00</div><div class="confirmestimate">≈ <span class="btc-est">0.0000</span> BTC</div><div class="confirmcard"><div class="title">BTCUSDT <span class="confirm-tags"><em class="side-tag">多</em><em class="margin-tag">逐仓</em><em class="leverage-tag">2X</em></span></div><div class="confirm-infos"><div class="info"><span>委托价格</span><span>市价</span></div><div class="info"><span>预计数量</span><span><span class="btc-est">0.0000</span> BTC</span></div><div class="info"><span>占用保证金</span><span><span class="amount-small">0.00</span> USDT</span></div><div class="info"><span>预估手续费</span><span class="fee">0.0000 USDT</span></div><div class="info liquidation-row"><span>预估强平价</span><span><span class="warn liquidation">41,500.00 USDT</span><small class="liquidation-note">下跌约 49% 强平</small></span></div></div></div><button class="addstop" data-action="stops"><span class="stop-summary">止盈止损</span><span class="stop-result"><span class="stop-values" hidden><span class="saved-tp"></span><span class="stop-separator"> / </span><span class="saved-sl"></span></span><span class="stop-plus">＋</span><span class="stop-edit" hidden><img src="lite-assets/quick-edit.svg" alt=""></span></span></button><div class="confirmbtn" role="button" tabindex="0" aria-label="向右滑动确认开仓"><span class="swipe-fill"></span><span class="confirmtext">确认开多</span><button class="swipe-knob" aria-label="拖动确认开仓"><img src="lite-assets/flow-next.svg" alt=""></button></div><button class="cancel" data-action="cancel">取消</button></section>
   <div class="settings-pop" aria-hidden="true"><button data-action="margin"><span>保证金模式</span><strong class="margin-pop-label">逐仓 <img src="lite-assets/flow-dropdown.svg" alt=""></strong></button><div><span>委托类型</span><strong>市价</strong></div></div>
   <div class="flowhome"></div><div class="flow-notice" role="status"></div>
 
@@ -87,12 +256,721 @@
  <section class="u-sheet quick-sheet" role="dialog" aria-modal="true" aria-labelledby="quick-title" data-sheet="quick"><div class="sheet-grab" aria-label="向下拖动关闭"></div><div class="targets-header"><h3 id="quick-title">编辑快捷数值</h3><button class="close-circle" data-action="dismiss-modal" aria-label="取消编辑"><img src="lite-assets/stops-close.svg" alt=""></button></div><p class="quick-description"></p><div class="quick-fields"><label>快捷值 1<span><input type="text" inputmode="decimal" autocomplete="off" data-quick-input="0" aria-label="快捷值 1"><em class="quick-unit">%</em></span></label><label>快捷值 2<span><input type="text" inputmode="decimal" autocomplete="off" data-quick-input="1" aria-label="快捷值 2"><em class="quick-unit">%</em></span></label><label>快捷值 3<span><input type="text" inputmode="decimal" autocomplete="off" data-quick-input="2" aria-label="快捷值 3"><em class="quick-unit">%</em></span></label><label>快捷值 4<span><input type="text" inputmode="decimal" autocomplete="off" data-quick-input="3" aria-label="快捷值 4"><em class="quick-unit">%</em></span></label></div><p class="quick-error" aria-live="polite"></p><div class="quick-edit-actions"><button data-action="reset-quick">恢复默认</button><button class="sheet-confirm" data-action="save-quick">保存</button></div></section>
  <section class="u-sheet leverage-sheet" role="dialog" aria-modal="true" aria-labelledby="leverage-title" data-sheet="leverage"><div class="sheet-grab" aria-label="向下拖动关闭"></div><h3 id="leverage-title">调整杠杆</h3><p class="leverage-caption">杠杆调整将同时影响当前合约的多空仓位和挂单的杠杆。</p><div class="leverage-control"><div class="stepper"><button data-step="-1" aria-label="降低杠杆"><img src="lite-assets/leverage-minus.svg" alt=""></button><div class="leverage-number"><output id="leverage-value">2</output><span>x</span></div><button data-step="1" aria-label="增加杠杆"><img src="lite-assets/leverage-plus.svg" alt=""></button></div><div class="leverage-slider"><input type="range" id="leverage-range" min="0" max="1000" value="71" aria-label="杠杆倍数"><img class="leverage-thumb" src="lite-assets/leverage-thumb.svg" alt=""><img class="leverage-thumb-detail" src="lite-assets/leverage-thumb-detail.svg" alt=""></div><div class="leverage-presets"><button data-leverage="1">1X</button><button data-leverage="40">40X</button><button data-leverage="80">80X</button><button data-leverage="120">120X</button><button data-leverage="160">160X</button><button data-leverage="200">200X</button></div></div><div class="leverage-capacity">目前杠杆倍数最高可持有成本: <span>≈682,146.0 USDT</span> <button data-action="capacity-info">查看详情</button></div><p class="leverage-risk">选择超过10X杠杆交易会增加强平风险，请注意相关风险</p><button class="sheet-confirm" data-action="apply-leverage">确认</button></section>
  <section class="u-sheet margin-sheet" role="dialog" aria-modal="true" aria-labelledby="margin-title" data-sheet="margin"><div class="sheet-grab" aria-label="向下拖动关闭"></div><h3 id="margin-title">保证金模式</h3><div class="margin-options"><div class="margin-option selected" data-margin="逐仓" role="radio" tabindex="0" aria-checked="true"><h4>逐仓 <span class="recommended">新手推荐</span></h4><p>各仓位本金独立，<strong>最多只亏本单本金</strong>，不牵连账户其他资金</p><button class="margin-example" data-example="isolated">示意图 <img src="lite-assets/margin-down.svg" alt=""></button><div class="margin-diagram"><span>账户余额</span><span>→</span><span class="diagram-active">本单本金</span><span>｜</span><span>其他仓位</span></div></div><div class="margin-option" data-margin="全仓" role="radio" tabindex="0" aria-checked="false"><h4>全仓</h4><p>所有仓位共用账户余额抗风险，<strong>强平会亏损全部可用资金</strong></p><button class="margin-example" data-example="cross">示意图 <img src="lite-assets/margin-down.svg" alt=""></button><div class="margin-diagram"><span>账户余额</span><span>↔</span><span class="diagram-active">全部仓位共同使用</span></div></div><div class="margin-option" data-margin="逐仓分仓" role="radio" tabindex="0" aria-checked="false"><h4>逐仓分仓 <span class="new-tag">新</span></h4><p>同一币对多次下单<strong>不合并均价</strong>，每笔订单各自独立算盈亏</p><button class="margin-example" data-example="separate">示意图 <img src="lite-assets/margin-down.svg" alt=""></button><div class="margin-diagram"><span class="diagram-active">订单 A</span><span>｜</span><span class="diagram-active">订单 B</span><span>｜</span><span class="diagram-active">订单 C</span></div></div></div><div class="margin-all"><span>保证金模式调整对全部合约生效 <img src="lite-assets/margin-info.svg" alt=""></span><button class="all-contracts" role="switch" aria-label="对全部合约生效" aria-checked="false"><i></i></button></div><button class="sheet-confirm" data-action="apply-margin">确认</button></section>
- <section class="u-sheet targets-sheet" role="dialog" aria-modal="true" aria-labelledby="targets-title" data-sheet="targets"><div class="sheet-grab" aria-label="向下拖动关闭"></div><div class="targets-header"><h3 id="targets-title">止盈止损</h3><button class="close-circle" data-action="dismiss-modal" aria-label="关闭止盈止损"><img src="lite-assets/stops-close.svg" alt=""></button></div><div class="target-card"><div class="target-heading"><span>盈利达到</span><span><b class="tp-trigger">--</b> 自动平仓</span></div><div class="target-input"><input id="target-profit" type="text" inputmode="decimal" placeholder="0.00" aria-label="目标盈利"><span>USDT</span></div><div class="target-pills"><button data-target="profit" data-roi="10"><span>+10U</span><small>10%</small></button><button data-target="profit" data-roi="25"><span>+25U</span><small>25%</small></button><button data-target="profit" data-roi="50"><span>+50U</span><small>50%</small></button><button data-target="profit" data-roi="100"><span>+100U</span><small>100%</small></button></div></div><div class="target-card"><div class="target-heading"><span>亏多少离场</span><span><b class="sl-trigger">--</b> 自动平仓</span></div><div class="target-input"><input id="target-loss" type="text" inputmode="decimal" placeholder="0.00" aria-label="最多亏损"><span>USDT</span></div><div class="target-pills"><button data-target="loss" data-roi="5"><span>-5U</span><small>5%</small></button><button data-target="loss" data-roi="25"><span>-25U</span><small>25%</small></button><button data-target="loss" data-roi="50"><span>-50U</span><small>50%</small></button><button data-target="loss" data-roi="100"><span>-100U</span><small>100%</small></button></div></div><button class="sheet-confirm" data-action="apply-targets">确认</button></section>
- <div class="u-sheet position-sheet" data-sheet="position" role="dialog" aria-modal="true" aria-label="BTC 持仓详情"><div class="sheet-grab" aria-label="向下拖动关闭"></div><h3>BTCUSDT</h3><button class="position-share" aria-label="分享持仓"><img src="lite-assets/position-share.svg" alt=""></button><div class="ptags"><b>多</b>　全仓　 40X <img src="lite-assets/position-edit.svg" alt=""></div><div class="posline position-track"><div style="text-align:center">最新价</div><img class="position-track-art" src="lite-assets/position-price-track.svg" alt=""><div style="display:flex;justify-content:space-between"><span>SL <span class="redtext">82,582.9</span></span><span>开仓价</span><span>TP <span class="green">82,582.9</span></span></div></div><div class="profitline"><div><span class="muted">未实现盈亏(USDT)</span><br><strong id="detail-profit">+20.00</strong></div><div style="text-align:right"><span class="muted">收益率</span><br><strong id="detail-pct">+8.37%</strong></div></div><div class="posmetrics"><div><span>持仓数量(USDT)</span><b>48,000.20</b></div><div><span>保证金(USDT)</span><b>0.2088</b></div><div><span>保证金比例</span><b>10.88%</b></div></div><div class="posmetrics"><div><span>开仓均价</span><b>48,000.20</b></div><div><span>标记价格</span><b class="position-mark">81,500.0</b></div><div><span>预估强平价</span><b>80,282</b></div></div><div class="posline position-meta">仓位盈亏 (USDT) <span style="float:right;color:#f53d55">-0.00494262</span><br>损益平衡价 <span style="float:right;color:#f4f7ff">82,475.8</span><br>已委托/可平(BTC) <span style="float:right;color:#f4f7ff">0/0.001</span><br>止盈/止损 (2)　› <span style="float:right"><span class="green">82,582.9</span> / <span class="redtext">82,582.9</span>　✎</span></div><div class="posactions"><button class="position-stop">止盈止损</button><button class="position-add">加仓</button><button class="position-close">平仓</button><button aria-label="反向操作"><img src="lite-assets/position-reverse.svg" alt=""></button><button aria-label="快捷操作"><img src="lite-assets/position-flash.svg" alt=""></button></div></div><div class="modalhome"></div><div class="modal-notice" role="status"></div>
+ <section class="u-sheet targets-sheet" role="dialog" aria-modal="true" aria-labelledby="targets-title" data-sheet="targets"><div class="sheet-grab" aria-label="向下拖动关闭"></div><div class="targets-header"><h3 id="targets-title">止盈止损</h3><button class="close-circle" data-action="dismiss-modal" aria-label="关闭止盈止损"><img src="lite-assets/stops-close.svg" alt=""></button></div><div class="target-card"><div class="target-heading"><span>盈利达到</span><span><b class="tp-trigger">--</b> 自动平仓</span></div><div class="target-input"><input id="target-profit" type="text" inputmode="decimal" placeholder="0.00" aria-label="目标盈利"><span>USDT</span></div><div class="target-pills"><button data-target="profit" data-roi="10"><span>+10U</span><small>10%</small></button><button data-target="profit" data-roi="25"><span>+25U</span><small>25%</small></button><button data-target="profit" data-roi="50"><span>+50U</span><small>50%</small></button><button data-target="profit" data-roi="100"><span>+100U</span><small>100%</small></button></div></div><div class="target-card"><div class="target-heading"><span>亏多少离场</span><span><b class="sl-trigger">--</b> 自动平仓</span></div><div class="target-input"><input id="target-loss" type="text" inputmode="decimal" placeholder="0.00" aria-label="最多亏损"><span>USDT</span></div><div class="target-pills"><button data-target="loss" data-roi="5"><span>-5U</span><small>5%</small></button><button data-target="loss" data-roi="10"><span>-25U</span><small>25%</small></button><button data-target="loss" data-roi="25"><span>-50U</span><small>50%</small></button><button data-target="loss" data-roi="50"><span>-100U</span><small>100%</small></button></div></div><button class="sheet-confirm" data-action="apply-targets">确认</button></section>
+ <div class="u-sheet position-sheet" data-sheet="position" role="dialog" aria-modal="true" aria-label="BTC 持仓详情"><div class="sheet-grab" aria-label="向下拖动关闭"></div><h3>BTCUSDT</h3><button class="position-share" aria-label="分享持仓"><img src="lite-assets/position-share.svg" alt=""></button><div class="ptags"><b>多</b><span class="position-margin">全仓</span><button class="position-lev" aria-label="调整持仓杠杆"><span>40X</span><img src="lite-assets/position-edit.svg" alt=""></button><span class="position-risk" aria-label="持仓风险等级"><i></i><i></i><i></i><i></i><i></i></span></div><div class="posline position-track"><div style="text-align:center">最新价</div><img class="position-track-art" src="lite-assets/position-price-track.svg" alt=""><div style="display:flex;justify-content:space-between"><span>SL <span class="redtext">82,582.9</span></span><span>开仓价</span><span>TP <span class="green">82,582.9</span></span></div></div><div class="profitline"><div><span class="muted">未实现盈亏(USDT) <span class="position-unit">M ▾</span></span><br><strong id="detail-profit">+20.00</strong></div><div style="text-align:right"><span class="muted">收益率</span><br><strong id="detail-pct">+8.37%</strong></div></div><div class="posmetrics"><div><span>持仓数量(USDT)</span><b>48,000.20</b></div><div><span>保证金(USDT)</span><b>0.2088</b></div><div><span>保证金比例</span><b>10.88%</b></div></div><div class="posmetrics"><div><span>开仓均价</span><b>48,000.20</b></div><div><span>标记价格</span><b class="position-mark">81,500.0</b></div><div><span>预估强平价</span><b>80,282</b></div></div><div class="posline position-meta">仓位盈亏 (USDT) <span style="float:right;color:#f53d55">-0.00494262</span><br>损益平衡价 <span style="float:right;color:#f4f7ff">82,475.8</span><br>已委托/可平(BTC) <span style="float:right;color:#f4f7ff">0/0.001</span><br>止盈/止损 (2)　› <span style="float:right"><span class="green">82,582.9</span> / <span class="redtext">82,582.9</span>　✎</span></div><div class="posactions"><button class="position-stop">止盈止损</button><button class="position-add">加仓</button><button class="position-close">平仓</button><button aria-label="反向操作"><img src="lite-assets/position-reverse.svg" alt=""></button><button aria-label="快捷操作"><img src="lite-assets/position-flash.svg" alt=""></button></div></div><div class="modalhome"></div><div class="modal-notice" role="status"></div>
  </div></div>
 
 <div class="order-banner-stage"><aside class="order-banner" role="status" aria-live="polite" aria-hidden="true"><div class="order-accent"></div><div class="order-banner-content"><div class="order-banner-heading"><strong>BTCUSDT <span class="order-direction">买入·2X</span></strong><button class="order-banner-close" data-action="close-order-banner" aria-label="关闭成交提示"><span><img src="lite-assets/order-banner-close.svg" alt=""></span></button></div><div class="order-banner-grid"><div><span>类型</span><b>市价委托</b></div><div><span>状态</span><b>已成交</b></div><div><span>价格</span><b class="order-fill-price"></b></div><div><span>数量</span><b class="order-fill-qty"></b></div></div></div></aside></div>
-<div class="toast">此操作将在后续页面演示</div></div></div><script>
+<div class="guide-layer" aria-hidden="true"><button class="guide-mask" aria-label="关闭新手指引"></button><div class="guide-stage"><section class="guide-page" data-guide="15560" aria-hidden="true"><div style="--tx:-50%;position:absolute;bottom:11px;align-content:stretch;display:flex;flex-direction:column;height:583px;align-items:center;left:50%;overflow:hidden;padding-top:16px;border-radius:32px;width:359px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15564" data-name="交易引导弹窗 / 做多上涨盈利">
+        <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;inset:0;align-items:flex-start;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" data-node-id="9:15565" data-name="BG">
+          <div aria-hidden="true" style="position:absolute;background:#0d0d0d;inset:0;pointer-events:none;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" ></div>
+          <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;height:16px;align-items:center;left:0;padding-top:5px;right:0;top:0" data-node-id="I9:15565;2677:169219" data-name="Grabber">
+            <div style="background:#333;height:4px;mix-blend-mode:plus-lighter;position:relative;border-radius:100px;flex-shrink:0;width:58px" data-node-id="I9:15565;2677:169220" data-name="Grabber" ></div>
+          </div>
+          <div style="position:absolute;border-width:1px;border-style:solid;border-color:#ffffff24;inset:0;border-radius:34px" data-node-id="I9:15565;2899:135567" ></div>
+          <div style="position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0px 1px 4px 0px rgba(255,255,255,0.15)" ></div>
+        </div>
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:13861" data-name="Nav">
+      <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#a9adb3;white-space:nowrap" data-node-id="9:13862">
+        什么是合约交易？
+      </p>
+    </div>
+        <div style="overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:center;padding:16px;position:relative;flex-shrink:0;text-align:center;width:100%" data-node-id="9:15567">
+          <p style="font-weight:800;line-height:1.4;position:relative;flex-shrink:0;font-size:36px;color:#19b473;width:100%" data-node-id="9:15568">
+            +600.8 USDT
+          </p>
+          <p style="font-weight:600;line-height:1.4;position:relative;flex-shrink:0;font-size:20px;color:#f4f7ff;width:100%" data-node-id="9:15569">
+            做多：价格上涨时盈利
+          </p>
+          <div style="font-weight:400;line-height:0;position:relative;flex-shrink:0;font-size:14px;color:#677080;width:100%" data-node-id="9:15570">
+            <p style="line-height:1.4;margin-bottom:0">价格高于开仓价时，做多仓位开始盈利。</p>
+            <p style="line-height:1.4">收益随涨幅增加，杠杆会放大盈亏。</p>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;align-items:flex-start;min-height:1px;padding-left:16px;padding-right:16px;position:relative;width:100%" data-node-id="9:15571" data-name="模拟行情 / 做多">
+          <div style="height:172px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15572">
+            <div style="position:absolute;height:172px;left:0;top:0.08px;width:326px" data-node-id="9:15573" data-name="上涨行情 / 渐变面积">
+              <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15560-img.svg" />
+            </div>
+            <div style="position:absolute;height:172px;left:0;top:0.08px;width:326px" data-node-id="9:15575" data-name="上涨行情 / 趋势曲线">
+              <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15560-img1.svg" />
+            </div>
+            <div style="position:absolute;left:320px;width:6.695px;height:6.695px;top:10.04px" data-node-id="9:15577" data-name="行情终点">
+              <div style="position:absolute;inset:-142.86%">
+                <img alt="" style="display:block;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15560-img2.svg" />
+              </div>
+            </div>
+            <div style="--tx:-50%;position:absolute;bottom:6.98%;left:calc(50% - 21.5px);top:93.02%;width:284px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15578" data-name="Vector">
+              <div style="position:absolute;inset:-0.48px 0">
+                <img alt="" style="display:block;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15560-imgVector19.svg" />
+              </div>
+            </div>
+            <div style="position:absolute;background:#f4f7ff;border-width:0.956px;border-color:#e6e8eb;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;padding-left:9px;padding-right:9px;padding-top:1px;padding-bottom:1px;right:0.09px;border-radius:7.651px;top:151px" data-node-id="9:15579" data-name="做多标签">
+              <p style="overflow-wrap:break-word;font-weight:600;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="9:15580">
+                Long
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15581">
+          <div style="background:#232529;align-content:stretch;display:flex;gap:8px;align-items:center;padding-left:8px;padding-right:10px;padding-top:4px;padding-bottom:4px;position:relative;border-radius:15.303px;flex-shrink:0" data-node-id="9:15582" data-name="按钮 / 重播">
+            <div style="position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="I9:15582;2467:88458" data-name="Icon/Refresh">
+              <div style="position:absolute;inset:9.17% 7.08% 9.27% 7.08%" data-node-id="I9:15582;2467:88458;11489:8774" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15560-imgVector20.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#f4f7ff;text-align:center;white-space:nowrap" data-node-id="I9:15582;2466:66309">
+              重播
+            </p>
+          </div>
+          <div style="height:8px;position:relative;flex-shrink:0;width:72px" data-node-id="9:15583" data-name="步骤进度 / 1 / 5">
+            <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15560-img15.svg" />
+          </div>
+          <div style="background:#fefefe;align-content:stretch;cursor:pointer;display:flex;flex-direction:column;gap:0px;height:40px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;position:relative;border-radius:8px;flex-shrink:0;width:100%" data-node-id="9:15589" data-name="*Button 按钮">
+            <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="I9:15589;7039:16105">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="I9:15589;4231:3323">
+                下一步
+              </p>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15590">
+            模拟行情仅作演示，不构成投资建议。
+          </p>
+        </div>
+      </div></section><section class="guide-page" data-guide="15591" aria-hidden="true"><div style="--tx:-50%;position:absolute;bottom:10px;align-content:stretch;display:flex;flex-direction:column;height:583px;align-items:center;left:50%;overflow:hidden;padding-top:16px;border-radius:32px;width:359px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15595" data-name="交易引导弹窗 / 做多上涨盈利">
+        <div style="--tx:-50%;position:absolute;align-content:stretch;display:flex;flex-direction:column;height:583px;align-items:flex-start;left:50%;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px;top:0;width:359px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15596" data-name="BG">
+          <div aria-hidden="true" style="position:absolute;background:#0d0d0d;inset:0;pointer-events:none;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" ></div>
+          <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;height:16px;align-items:center;left:0;padding-top:5px;right:0;top:0" data-node-id="I9:15596;2677:169219" data-name="Grabber">
+            <div  style="background:#ccc;height:4px;position:relative;border-radius:100px;flex-shrink:0;width:58px" ></div>
+          </div>
+          <div style="position:absolute;border-width:1px;border-style:solid;border-color:#ffffff24;inset:0;border-radius:34px" data-node-id="I9:15596;2899:135567" ></div>
+          <div style="position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0px 1px 4px 0px rgba(255,255,255,0.15)" ></div>
+        </div>
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:13861" data-name="Nav">
+      <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#a9adb3;white-space:nowrap" data-node-id="9:13862">
+        什么是合约交易？
+      </p>
+    </div>
+        <div style="overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:center;padding:16px;position:relative;flex-shrink:0;text-align:center;width:359px" data-node-id="9:15598">
+          <p style="font-weight:800;line-height:1.4;position:relative;flex-shrink:0;font-size:36px;color:#19b473;width:100%" data-node-id="9:15599">
+            +670.5 USDT
+          </p>
+          <p style="font-weight:600;line-height:1.4;position:relative;flex-shrink:0;font-size:20px;color:#f4f7ff;width:100%" data-node-id="9:15600">
+            做空：价格下跌时盈利
+          </p>
+          <div style="font-weight:400;line-height:0;position:relative;flex-shrink:0;font-size:14px;color:#677080;width:100%" data-node-id="9:15601">
+            <p style="line-height:1.4;margin-bottom:0">先卖出，再以更低价格买回。</p>
+            <p style="line-height:1.4">价格低于开仓价时，做空仓位开始盈利。</p>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;align-items:flex-start;min-height:1px;padding-left:16px;padding-right:16px;padding-top:30px;padding-bottom:30px;position:relative;width:100%" data-node-id="9:15602" data-name="模拟行情 / 做多">
+          <div style="height:16.913px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15603">
+            <div style="--tx:-50%;position:absolute;bottom:46.79%;left:calc(50% - 19px);top:53.21%;width:289px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15604" data-name="Vector">
+              <div style="position:absolute;inset:-0.48px 0">
+                <img alt="" style="display:block;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15591-imgVector19.svg" />
+              </div>
+            </div>
+            <div style="position:absolute;background:#f4f7ff;border-width:0.956px;border-color:#e6e8eb;border-style:solid;align-content:stretch;display:flex;align-items:center;justify-content:center;padding-left:9px;padding-right:9px;padding-top:1px;padding-bottom:1px;right:0.09px;border-radius:7.651px;top:0" data-node-id="9:15605" data-name="做多标签">
+              <p style="overflow-wrap:break-word;font-weight:600;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="9:15606">
+                Short
+              </p>
+            </div>
+            <div style="position:absolute;display:contents;left:0;top:-30px" data-node-id="9:15607">
+              <div style="position:absolute;height:172.154px;left:0;top:-30px;width:323.762px" data-node-id="9:15608" data-name="下跌行情 / 渐变面积">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15591-img.svg" />
+              </div>
+              <div style="position:absolute;height:172.154px;left:0;top:-30px;width:323.762px" data-node-id="9:15610" data-name="下跌行情 / 趋势曲线">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15591-img1.svg" />
+              </div>
+              <div style="position:absolute;height:6.695px;left:320.52px;top:125.42px;width:6.475px" data-node-id="9:15612" data-name="行情终点">
+                <div style="position:absolute;inset:-142.86% -147.7%">
+                  <img alt="" style="display:block;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15591-img2.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15613">
+          <div style="background:#232529;align-content:stretch;display:flex;gap:8px;align-items:center;padding-left:8px;padding-right:10px;padding-top:4px;padding-bottom:4px;position:relative;border-radius:15.303px;flex-shrink:0" data-node-id="9:15614" data-name="按钮 / 重播">
+            <div style="position:relative;flex-shrink:0;width:16px;height:16px" data-node-id="I9:15614;2467:88458" data-name="Icon/Refresh">
+              <div style="position:absolute;inset:9.17% 7.08% 9.27% 7.08%" data-node-id="I9:15614;2467:88458;11489:8774" data-name="Vector">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15591-imgVector20.svg" />
+              </div>
+            </div>
+            <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#f4f7ff;text-align:center;white-space:nowrap" data-node-id="I9:15614;2466:66309">
+              重播
+            </p>
+          </div>
+          <div style="height:8px;position:relative;flex-shrink:0;width:72px" data-node-id="9:15615" data-name="步骤进度 / 1 / 5">
+            <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15591-img15.svg" />
+          </div>
+          <div style="background:#fefefe;align-content:stretch;cursor:pointer;display:flex;flex-direction:column;gap:0px;height:40px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;position:relative;border-radius:8px;flex-shrink:0;width:100%" data-node-id="9:15621" data-name="*Button 按钮">
+            <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="I9:15621;7039:16105">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="I9:15621;4231:3323">
+                下一步
+              </p>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15622">
+            模拟行情仅作演示，不构成投资建议。
+          </p>
+        </div>
+      </div></section><section class="guide-page" data-guide="15623" aria-hidden="true"><div style="--tx:-50%;position:absolute;bottom:10px;align-content:stretch;display:flex;flex-direction:column;height:583px;align-items:center;left:50%;overflow:hidden;padding-top:16px;border-radius:32px;width:355px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15627" data-name="交易引导弹窗 / 做多上涨盈利">
+        <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;inset:0;align-items:flex-start;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" data-node-id="9:15628" data-name="BG">
+          <div aria-hidden="true" style="position:absolute;background:#0d0d0d;inset:0;pointer-events:none;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" ></div>
+          <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;height:16px;align-items:center;left:0;padding-top:5px;right:0;top:0" data-node-id="I9:15628;2677:169219" data-name="Grabber">
+            <div  style="background:#ccc;height:4px;position:relative;border-radius:100px;flex-shrink:0;width:58px" ></div>
+          </div>
+          <div style="position:absolute;border-width:1px;border-style:solid;border-color:#ffffff24;inset:0;border-radius:34px" data-node-id="I9:15628;2899:135567" ></div>
+          <div style="position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0px 1px 4px 0px rgba(255,255,255,0.15)" ></div>
+        </div>
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:13861" data-name="Nav">
+      <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#a9adb3;white-space:nowrap" data-node-id="9:13862">
+        什么是合约交易？
+      </p>
+    </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:center;padding:16px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15630">
+          <div style="align-content:stretch;display:flex;flex-direction:column;align-items:center;overflow:hidden;padding-left:8px;padding-right:8px;position:relative;border-radius:14px;flex-shrink:0;width:327px" data-node-id="9:15631" data-name="结果卡-涨">
+            <div style="align-content:stretch;display:flex;gap:2px;align-items:center;overflow:hidden;position:relative;flex-shrink:0" data-node-id="9:15632" data-name="变化-涨">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:36px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15633">
+                $100
+              </p>
+              <div style="overflow:hidden;position:relative;flex-shrink:0;width:24px;height:24px" data-node-id="9:15634" data-name="*Icon 图标/Arrow_Right_Tail">
+                <div style="position:absolute;inset:23.79% 15% 25.46% 15%" data-node-id="I9:15634;11806:36493" data-name="Vector">
+                  <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15623-imgVector19.svg" />
+                </div>
+              </div>
+              <p style="overflow-wrap:break-word;font-weight:800;line-height:1.4;position:relative;flex-shrink:0;font-size:36px;color:#19b473;text-align:center;white-space:nowrap" data-node-id="9:15635">
+                $150
+              </p>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:600;line-height:1.4;min-width:100%;position:relative;flex-shrink:0;font-size:20px;color:#f4f7ff;text-align:center;width:min-content" data-node-id="9:15636">
+            杠杆：同样的涨跌，放大盈亏
+          </p>
+          <div style="overflow-wrap:break-word;font-weight:400;line-height:0;min-width:100%;position:relative;flex-shrink:0;font-size:14px;color:#677080;text-align:center;width:min-content" data-node-id="9:15637">
+            <p style="line-height:1.4;margin-bottom:0">同样的价格变动，不同杠杆带来不同盈亏。</p>
+            <p style="line-height:1.4">收益被放大的同时，亏损也会同比放大。</p>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:16px;align-items:center;min-height:1px;padding-left:24px;padding-right:24px;position:relative;width:100%" data-node-id="9:15638">
+          <div style="align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:center;position:relative;flex-shrink:0;width:100%" data-node-id="9:15639">
+            <p style="overflow-wrap:break-word;font-weight:800;line-height:1.4;position:relative;flex-shrink:0;font-size:28px;color:#f4f7ff;text-align:center;white-space:nowrap" data-node-id="9:15640">
+              10×
+            </p>
+            <div style="height:24px;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:15641" data-name="轨道">
+              <div style="--tx:-50%;position:absolute;background:#383e48;height:8px;left:50%;border-radius:100px;top:8px;width:307px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15642" data-name="轨道底" ></div>
+              <div style="position:absolute;background:#f4f7ff;height:8px;left:0;border-radius:100px;top:8px;width:165px" data-node-id="9:15643" data-name="轨道进度" ></div>
+              <div style="--tx:-50%;position:absolute;left:calc(50% + 0.5px);width:24px;height:24px;top:0;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15644" data-name="滑块">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15623-img.svg" />
+              </div>
+            </div>
+            <div style="overflow-wrap:break-word;align-content:stretch;display:flex;font-weight:500;align-items:center;justify-content:space-between;line-height:1.4;overflow:hidden;position:relative;flex-shrink:0;font-size:13px;color:#a9adb3;width:100%" data-node-id="9:15645" data-name="倍数选项">
+              <p style="position:relative;flex-shrink:0;width:32px" data-node-id="9:15646">
+                2x
+              </p>
+              <p style="position:relative;flex-shrink:0;text-align:center;width:32px" data-node-id="9:15647">
+                10x
+              </p>
+              <p style="position:relative;flex-shrink:0;text-align:center;width:32px" data-node-id="9:15648">
+                25×
+              </p>
+              <p style="position:relative;flex-shrink:0;text-align:center;width:32px" data-node-id="9:15649">
+                50×
+              </p>
+              <p style="position:relative;flex-shrink:0;text-align:right;width:32px" data-node-id="9:15650">
+                100×
+              </p>
+            </div>
+          </div>
+          <div style="background:#232529;align-content:stretch;display:flex;gap:4px;align-items:center;padding:2px;position:relative;border-radius:8px;flex-shrink:0;width:307px" data-node-id="9:15651" data-name="*Segmented（旧版） 滑块开关">
+            <div style="background:#3d4046;align-content:stretch;display:flex;flex:1 0 0;gap:4px;height:30px;align-items:center;justify-content:center;min-width:1px;padding-left:48px;padding-right:48px;padding-top:5px;padding-bottom:5px;position:relative;border-radius:6px" data-node-id="I9:15651;7626:11468" data-name="*Segmented Control 滑块">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#f4f7ff;text-align:center;white-space:nowrap" data-node-id="I9:15651;7626:11468;7626:10203">
+                开多
+              </p>
+            </div>
+            <a style="background:#232529;align-content:stretch;cursor:pointer;display:flex;flex:1 0 0;gap:4px;height:30px;align-items:center;justify-content:center;min-width:1px;padding-left:48px;padding-right:48px;padding-top:5px;padding-bottom:5px;position:relative;border-radius:6px" data-node-id="I9:15651;7626:11470" data-name="*Segmented Control 滑块">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#838a97;text-align:center;white-space:nowrap" data-node-id="I9:15651;7626:11470;7626:10206">
+                开空
+              </p>
+            </a>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15652">
+          <div style="height:8px;position:relative;flex-shrink:0;width:72px" data-node-id="9:15653" data-name="步骤进度 / 1 / 5">
+            <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15623-img15.svg" />
+          </div>
+          <div style="background:#fefefe;align-content:stretch;cursor:pointer;display:flex;flex-direction:column;gap:0px;height:40px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;position:relative;border-radius:8px;flex-shrink:0;width:100%" data-node-id="9:15659" data-name="*Button 按钮">
+            <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="I9:15659;7039:16105">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="I9:15659;4231:3323">
+                下一步
+              </p>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15660">
+            模拟行情仅作演示，不构成投资建议。
+          </p>
+        </div>
+      </div></section><section class="guide-page" data-guide="15661" aria-hidden="true"><div style="--tx:-50%;position:absolute;bottom:10px;align-content:stretch;display:flex;flex-direction:column;height:583px;align-items:center;left:50%;overflow:hidden;padding-top:16px;border-radius:32px;width:355px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15665" data-name="交易引导弹窗 / 做多上涨盈利">
+        <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;inset:0;align-items:flex-start;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" data-node-id="9:15666" data-name="BG">
+          <div aria-hidden="true" style="position:absolute;background:#0d0d0d;inset:0;pointer-events:none;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" ></div>
+          <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;height:16px;align-items:center;left:0;padding-top:5px;right:0;top:0" data-node-id="I9:15666;2677:169219" data-name="Grabber">
+            <div  style="background:#ccc;height:4px;position:relative;border-radius:100px;flex-shrink:0;width:58px" ></div>
+          </div>
+          <div style="position:absolute;border-width:1px;border-style:solid;border-color:#ffffff24;inset:0;border-radius:34px" data-node-id="I9:15666;2899:135567" ></div>
+          <div style="position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0px 1px 4px 0px rgba(255,255,255,0.15)" ></div>
+        </div>
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:13861" data-name="Nav">
+      <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#a9adb3;white-space:nowrap" data-node-id="9:13862">
+        什么是合约交易？
+      </p>
+    </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:center;padding:16px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15668">
+          <div style="align-content:stretch;display:flex;flex-direction:column;align-items:center;overflow:hidden;padding-left:8px;padding-right:8px;position:relative;border-radius:14px;flex-shrink:0;width:327px" data-node-id="9:15669" data-name="结果卡-涨">
+            <div style="align-content:stretch;display:flex;gap:2px;align-items:center;overflow:hidden;position:relative;flex-shrink:0" data-node-id="9:15670" data-name="变化-涨">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:36px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15671">
+                $100
+              </p>
+              <div style="overflow:hidden;position:relative;flex-shrink:0;width:24px;height:24px" data-node-id="9:15672" data-name="*Icon 图标/Arrow_Right_Tail">
+                <div style="position:absolute;inset:23.79% 15% 25.46% 15%" data-node-id="I9:15672;11806:36493" data-name="Vector">
+                  <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15661-imgVector19.svg" />
+                </div>
+              </div>
+              <p style="overflow-wrap:break-word;font-weight:800;line-height:1.4;position:relative;flex-shrink:0;font-size:36px;color:#f53d55;text-align:center;white-space:nowrap" data-node-id="9:15673">
+                $0
+              </p>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:600;line-height:1.4;min-width:100%;position:relative;flex-shrink:0;font-size:20px;color:#f4f7ff;text-align:center;width:min-content" data-node-id="9:15674">
+            杠杆：同样的涨跌，放大盈亏
+          </p>
+          <div style="overflow-wrap:break-word;font-weight:400;line-height:0;min-width:100%;position:relative;flex-shrink:0;font-size:14px;color:#677080;text-align:center;width:min-content" data-node-id="9:15675">
+            <p style="line-height:1.4;margin-bottom:0">同样的价格变动，不同杠杆带来不同盈亏。</p>
+            <p style="line-height:1.4">收益被放大的同时，亏损也会同比放大。</p>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:16px;align-items:center;min-height:1px;padding-left:24px;padding-right:24px;position:relative;width:100%" data-node-id="9:15676">
+          <div style="align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:center;position:relative;flex-shrink:0;width:100%" data-node-id="9:15677">
+            <p style="overflow-wrap:break-word;font-weight:800;line-height:1.4;position:relative;flex-shrink:0;font-size:28px;color:#f4f7ff;text-align:center;white-space:nowrap" data-node-id="9:15678">
+              10×
+            </p>
+            <div style="height:24px;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:15679" data-name="轨道">
+              <div style="--tx:-50%;position:absolute;background:#383e48;height:8px;left:50%;border-radius:100px;top:8px;width:307px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15680" data-name="轨道底" ></div>
+              <div style="position:absolute;background:#f4f7ff;height:8px;left:0;border-radius:100px;top:8px;width:165px" data-node-id="9:15681" data-name="轨道进度" ></div>
+              <div style="--tx:-50%;position:absolute;left:calc(50% + 0.5px);width:24px;height:24px;top:0;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15682" data-name="滑块">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15661-img.svg" />
+              </div>
+            </div>
+            <div style="overflow-wrap:break-word;align-content:stretch;display:flex;font-weight:500;align-items:center;justify-content:space-between;line-height:1.4;overflow:hidden;position:relative;flex-shrink:0;font-size:13px;color:#a9adb3;width:100%" data-node-id="9:15683" data-name="倍数选项">
+              <p style="position:relative;flex-shrink:0;width:32px" data-node-id="9:15684">
+                2x
+              </p>
+              <p style="position:relative;flex-shrink:0;text-align:center;width:32px" data-node-id="9:15685">
+                10x
+              </p>
+              <p style="position:relative;flex-shrink:0;text-align:center;width:32px" data-node-id="9:15686">
+                25×
+              </p>
+              <p style="position:relative;flex-shrink:0;text-align:center;width:32px" data-node-id="9:15687">
+                50×
+              </p>
+              <p style="position:relative;flex-shrink:0;text-align:right;width:32px" data-node-id="9:15688">
+                100×
+              </p>
+            </div>
+          </div>
+          <div style="background:#232529;align-content:stretch;display:flex;gap:4px;align-items:center;padding:2px;position:relative;border-radius:8px;flex-shrink:0;width:307px" data-node-id="9:15689" data-name="*Segmented（旧版） 滑块开关">
+            <div style="background:#232529;align-content:stretch;display:flex;flex:1 0 0;gap:4px;height:30px;align-items:center;justify-content:center;min-width:1px;padding-left:48px;padding-right:48px;padding-top:5px;padding-bottom:5px;position:relative;border-radius:6px" data-node-id="I9:15689;7626:11468" data-name="*Segmented Control 滑块">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#838a97;text-align:center;white-space:nowrap" data-node-id="I9:15689;7626:11468;7626:10203">
+                开多
+              </p>
+            </div>
+            <div style="background:#3d4046;align-content:stretch;display:flex;flex:1 0 0;gap:4px;height:30px;align-items:center;justify-content:center;min-width:1px;padding-left:48px;padding-right:48px;padding-top:5px;padding-bottom:5px;position:relative;border-radius:6px" data-node-id="I9:15689;7626:11470" data-name="*Segmented Control 滑块">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#f4f7ff;text-align:center;white-space:nowrap" data-node-id="I9:15689;7626:11470;7626:10206">
+                开空
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15690">
+          <div style="height:8px;position:relative;flex-shrink:0;width:72px" data-node-id="9:15691" data-name="步骤进度 / 1 / 5">
+            <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15661-img15.svg" />
+          </div>
+          <div style="background:#fefefe;align-content:stretch;cursor:pointer;display:flex;flex-direction:column;gap:0px;height:40px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;position:relative;border-radius:8px;flex-shrink:0;width:100%" data-node-id="9:15697" data-name="*Button 按钮">
+            <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="I9:15697;7039:16105">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="I9:15697;4231:3323">
+                下一步
+              </p>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15698">
+            模拟行情仅作演示，不构成投资建议。
+          </p>
+        </div>
+      </div></section><section class="guide-page" data-guide="15699" aria-hidden="true"><div style="--tx:-50%;position:absolute;bottom:10px;align-content:stretch;display:flex;flex-direction:column;height:583px;align-items:center;left:50%;overflow:hidden;padding-top:16px;border-radius:32px;width:355px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15703" data-name="交易引导弹窗 / 做多上涨盈利">
+        <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;inset:0;align-items:flex-start;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" data-node-id="9:15704" data-name="BG">
+          <div aria-hidden="true" style="position:absolute;background:#0d0d0d;inset:0;pointer-events:none;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" ></div>
+          <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;height:16px;align-items:center;left:0;padding-top:5px;right:0;top:0" data-node-id="I9:15704;2677:169219" data-name="Grabber">
+            <div  style="background:#ccc;height:4px;position:relative;border-radius:100px;flex-shrink:0;width:58px" ></div>
+          </div>
+          <div style="position:absolute;border-width:1px;border-style:solid;border-color:#ffffff24;inset:0;border-radius:34px" data-node-id="I9:15704;2899:135567" ></div>
+          <div style="position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0px 1px 4px 0px rgba(255,255,255,0.15)" ></div>
+        </div>
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:13861" data-name="Nav">
+      <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#a9adb3;white-space:nowrap" data-node-id="9:13862">
+        什么是合约交易？
+      </p>
+    </div>
+        <div style="overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:center;line-height:1.4;overflow:hidden;padding:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15706" data-name="标题区">
+          <p style="font-weight:500;position:relative;flex-shrink:0;font-size:12px;color:#677080;width:100%" data-node-id="9:15707">
+            10× 做多 BTC · 投入 100 USDT
+          </p>
+          <p style="font-weight:600;position:relative;flex-shrink:0;font-size:20px;color:#f4f7ff;width:100%" data-node-id="9:15708">
+            价格快碰到强平线了
+          </p>
+        </div>
+        <div style="align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:16px;align-items:center;min-height:1px;padding-left:16px;padding-right:16px;position:relative;width:100%" data-node-id="9:15709" data-name="Demo2">
+          <div style="height:150px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15710" data-name="Demo">
+            <div style="position:absolute;height:134px;left:0;top:16px;width:323px" data-node-id="9:15711" data-name="走势图">
+              <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15699-img.svg" />
+            </div>
+            <div style="position:absolute;background:#232529;align-content:stretch;display:flex;align-items:flex-start;left:251px;overflow:hidden;padding-left:6px;padding-right:6px;padding-top:2px;padding-bottom:2px;border-radius:6px;top:8px" data-node-id="9:15717" data-name="标签-开仓">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:10px;color:#838a97;white-space:nowrap" data-node-id="9:15718">
+                开仓 60,000
+              </p>
+            </div>
+            <div style="position:absolute;background:#f4f7ff;align-content:stretch;display:flex;align-items:flex-start;left:253px;overflow:hidden;padding-left:6px;padding-right:6px;padding-top:2px;padding-bottom:2px;border-radius:6px;top:54px" data-node-id="9:15719" data-name="标签-现在">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:10px;color:black;white-space:nowrap" data-node-id="9:15720">
+                现在 55,200
+              </p>
+            </div>
+            <div style="position:absolute;background:#f53d55;align-content:stretch;display:flex;align-items:flex-start;left:253px;overflow:hidden;padding-left:6px;padding-right:6px;padding-top:2px;padding-bottom:2px;border-radius:6px;top:82px" data-node-id="9:15721" data-name="标签-强平">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:10px;color:white;white-space:nowrap" data-node-id="9:15722">
+                强平 54,300
+              </p>
+            </div>
+            <p style="--tx:-100%;overflow-wrap:break-word;position:absolute;font-weight:500;line-height:1.4;left:224px;font-size:11px;color:#f53d55;text-align:right;top:96px;white-space:nowrap;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15723">
+              只差 1.6%
+            </p>
+          </div>
+          <div style="align-content:stretch;display:flex;flex-direction:column;gap:6px;align-items:flex-start;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:15724" data-name="保证金余额">
+            <div style="align-content:stretch;display:flex;gap:8px;align-items:center;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:15725" data-name="保证金行">
+              <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#838a97;white-space:nowrap" data-node-id="9:15726">
+                剩余保证金
+              </p>
+              <div style="flex:1 0 0;height:1px;min-width:1px;position:relative" data-node-id="9:15727" data-name="间距" ></div>
+              <div style="overflow-wrap:break-word;align-content:stretch;display:flex;align-items:baseline;line-height:1.4;overflow:hidden;position:relative;flex-shrink:0;white-space:nowrap" data-node-id="9:15728" data-name="保证金数值">
+                <p style="font-weight:600;position:relative;flex-shrink:0;font-size:14px;color:#f53d55" data-node-id="9:15729">
+                  20
+                </p>
+                <p style="font-weight:500;position:relative;flex-shrink:0;font-size:12px;color:#677080" data-node-id="9:15730"> / 100 USDT</p>
+              </div>
+            </div>
+            <div style="background:#2e3035;height:8px;overflow:hidden;position:relative;border-radius:4px;flex-shrink:0;width:100%" data-node-id="9:15731" data-name="保证金条">
+              <div style="position:absolute;background:#f53d55;height:8px;left:0;border-radius:4px;top:0;width:65px" data-node-id="9:15732" data-name="保证金剩余" ></div>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;color:#677080;width:100%" data-node-id="9:15733">
+            已经亏了 80，只剩 20 USDT。价格再跌 1.6%，系统会自动帮你平仓。
+          </p>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15734">
+          <div style="height:8px;position:relative;flex-shrink:0;width:72px" data-node-id="9:15735" data-name="步骤进度 / 1 / 5">
+            <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15699-img15.svg" />
+          </div>
+          <div style="align-content:stretch;display:flex;gap:16px;align-items:flex-start;position:relative;flex-shrink:0;width:100%" data-node-id="9:15741">
+            <div style="background:#fefefe;align-content:stretch;cursor:pointer;display:flex;flex:1 0 0;flex-direction:column;gap:0px;height:40px;align-items:center;justify-content:center;min-width:1px;padding-left:16px;padding-right:16px;position:relative;border-radius:8px" data-node-id="9:15742" data-name="*Button 按钮">
+              <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="I9:15742;7039:16105">
+                <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="I9:15742;4231:3323">
+                  添加保证金
+                </p>
+              </div>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15744">
+            模拟行情仅作演示，不构成投资建议。
+          </p>
+        </div>
+      </div></section><section class="guide-page" data-guide="15745" aria-hidden="true"><div style="--tx:-50%;position:absolute;bottom:10px;align-content:stretch;display:flex;flex-direction:column;height:583px;align-items:center;left:50%;overflow:hidden;padding-top:16px;border-radius:32px;width:359px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15749" data-name="交易引导弹窗 / 做多上涨盈利">
+        <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;height:583px;align-items:flex-start;left:0;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px;top:0;width:359px" data-node-id="9:15750" data-name="BG">
+          <div aria-hidden="true" style="position:absolute;background:#0d0d0d;inset:0;pointer-events:none;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" ></div>
+          <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;height:16px;align-items:center;left:0;padding-top:5px;right:0;top:0" data-node-id="I9:15750;2677:169219" data-name="Grabber">
+            <div  style="background:#ccc;height:4px;position:relative;border-radius:100px;flex-shrink:0;width:58px" ></div>
+          </div>
+          <div style="position:absolute;border-width:1px;border-style:solid;border-color:#ffffff24;inset:0;border-radius:34px" data-node-id="I9:15750;2899:135567" ></div>
+          <div style="position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0px 1px 4px 0px rgba(255,255,255,0.15)" ></div>
+        </div>
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:13861" data-name="Nav">
+      <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#a9adb3;white-space:nowrap" data-node-id="9:13862">
+        什么是合约交易？
+      </p>
+    </div>
+        <div style="overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:center;line-height:1.4;overflow:hidden;padding:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15752" data-name="标题区">
+          <p style="font-weight:500;position:relative;flex-shrink:0;font-size:12px;color:#677080;width:327px" data-node-id="9:15753">
+            10× 做多 BTC · 投入 100 USDT
+          </p>
+          <p style="font-weight:600;position:relative;flex-shrink:0;font-size:20px;color:#f4f7ff;width:327px" data-node-id="9:15754">
+            加了 50 USDT，强平线往下移了
+          </p>
+        </div>
+        <div style="align-content:stretch;display:flex;flex:1 0 0;flex-direction:column;gap:16px;align-items:center;min-height:1px;padding-left:16px;padding-right:16px;position:relative;width:100%" data-node-id="9:15755" data-name="Demo2">
+          <div style="height:150px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15756" data-name="Demo">
+            <div style="position:absolute;height:150px;left:0;top:0;width:327px" data-node-id="9:15757" data-name="走势图">
+              <div style="position:absolute;inset:0 0 0 -0.31%">
+                <img alt="" style="display:block;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15745-img.svg" />
+              </div>
+            </div>
+            <div style="position:absolute;background:#232529;align-content:stretch;display:flex;align-items:flex-start;left:255px;overflow:hidden;padding-left:6px;padding-right:6px;padding-top:2px;padding-bottom:2px;border-radius:6px;top:8px" data-node-id="9:15766" data-name="标签-开仓">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:10px;color:#838a97;white-space:nowrap" data-node-id="9:15767">
+                开仓 60,000
+              </p>
+            </div>
+            <div style="position:absolute;background:#f4f7ff;align-content:stretch;display:flex;align-items:flex-start;left:257px;overflow:hidden;padding-left:6px;padding-right:6px;padding-top:2px;padding-bottom:2px;border-radius:6px;top:64px" data-node-id="9:15768" data-name="标签-现在">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:10px;color:black;white-space:nowrap" data-node-id="9:15769">
+                现在 55,200
+              </p>
+            </div>
+            <div style="position:absolute;background:#f53d55;align-content:stretch;display:flex;align-items:flex-start;left:259px;overflow:hidden;padding-left:6px;padding-right:6px;padding-top:2px;padding-bottom:2px;border-radius:6px;top:121px" data-node-id="9:15770" data-name="标签-强平">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:10px;color:white;white-space:nowrap" data-node-id="9:15771">
+                强平 51,300
+              </p>
+            </div>
+            <p style="--tx:-100%;overflow-wrap:break-word;position:absolute;font-weight:500;line-height:1.4;left:224px;font-size:11px;color:#19b473;text-align:right;top:97px;white-space:nowrap;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15772">
+              还差 7%
+            </p>
+          </div>
+          <div style="align-content:stretch;display:flex;flex-direction:column;gap:6px;align-items:flex-start;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:15773" data-name="保证金余额">
+            <div style="align-content:stretch;display:flex;gap:8px;align-items:center;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:15774" data-name="保证金行">
+              <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#838a97;white-space:nowrap" data-node-id="9:15775">
+                剩余保证金
+              </p>
+              <div style="flex:1 0 0;height:1px;min-width:1px;position:relative" data-node-id="9:15776" data-name="间距" ></div>
+              <div style="overflow-wrap:break-word;align-content:stretch;display:flex;align-items:baseline;line-height:1.4;overflow:hidden;position:relative;flex-shrink:0;white-space:nowrap" data-node-id="9:15777" data-name="保证金数值">
+                <p style="font-weight:600;position:relative;flex-shrink:0;font-size:14px;color:#19b473" data-node-id="9:15778">
+                  70
+                </p>
+                <p style="font-weight:500;position:relative;flex-shrink:0;font-size:12px;color:#677080" data-node-id="9:15779"> / 150 USDT</p>
+              </div>
+            </div>
+            <div style="background:#2e3035;height:8px;overflow:hidden;position:relative;border-radius:4px;flex-shrink:0;width:100%" data-node-id="9:15780" data-name="保证金条">
+              <div style="position:absolute;background:#19b473;height:8px;left:0;border-radius:4px;top:0;width:153px" data-node-id="9:15781" data-name="保证金剩余" ></div>
+              <div style="position:absolute;background:#19b473;height:8px;left:44px;border-radius:4px;top:0;width:109px" data-node-id="9:15782" data-name="新增部分" ></div>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;color:#677080;width:100%" data-node-id="9:15783">
+            价格要跌到 51,300 才会强平，有了等反弹的时间。但亏损没有减少，继续跌最多会亏 150 USDT。
+          </p>
+          <a style="align-content:stretch;cursor:pointer;display:flex;align-items:flex-start;justify-content:center;overflow:hidden;padding-top:4px;padding-bottom:4px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15784" data-name="换个选择">
+            <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;color:#0f5efc;text-align:center;white-space:nowrap" data-node-id="9:15785">
+              看看不加保证金会怎样
+            </p>
+          </a>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15786">
+          <div style="height:8px;position:relative;flex-shrink:0;width:72px" data-node-id="9:15787" data-name="步骤进度 / 1 / 5">
+            <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15745-img15.svg" />
+          </div>
+          <div style="background:#fefefe;align-content:stretch;cursor:pointer;display:flex;flex-direction:column;gap:0px;height:40px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;position:relative;border-radius:8px;flex-shrink:0;width:100%" data-node-id="9:15793" data-name="*Button 按钮">
+            <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="I9:15793;7039:16105">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="I9:15793;4231:3323">
+                下一步
+              </p>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15794">
+            模拟行情仅作演示，不构成投资建议。
+          </p>
+        </div>
+      </div></section><section class="guide-page" data-guide="15795" aria-hidden="true"><div style="--tx:-50%;position:absolute;bottom:10px;align-content:stretch;display:flex;flex-direction:column;align-items:center;left:50%;overflow:hidden;padding-top:16px;border-radius:32px;width:355px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15799" data-name="交易引导弹窗 / 做多上涨盈利">
+        <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;inset:0;align-items:flex-start;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" data-node-id="9:15800" data-name="BG">
+          <div aria-hidden="true" style="position:absolute;background:#0d0d0d;inset:0;pointer-events:none;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" ></div>
+          <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;height:16px;align-items:center;left:0;padding-top:5px;right:0;top:0" data-node-id="I9:15800;2677:169219" data-name="Grabber">
+            <div  style="background:#ccc;height:4px;position:relative;border-radius:100px;flex-shrink:0;width:58px" ></div>
+          </div>
+          <div style="position:absolute;border-width:1px;border-style:solid;border-color:#ffffff24;inset:0;border-radius:34px" data-node-id="I9:15800;2899:135567" ></div>
+          <div style="position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0px 1px 4px 0px rgba(255,255,255,0.15)" ></div>
+        </div>
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:13861" data-name="Nav">
+      <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#a9adb3;white-space:nowrap" data-node-id="9:13862">
+        什么是合约交易？
+      </p>
+    </div>
+        <div style="overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;gap:8px;align-items:center;line-height:1.4;overflow:hidden;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15802" data-name="标题区">
+          <p style="font-weight:500;position:relative;flex-shrink:0;font-size:12px;color:#677080;width:100%" data-node-id="9:15803">
+            10× 做多 BTC · 投入 100 USDT
+          </p>
+          <p style="font-weight:600;position:relative;flex-shrink:0;font-size:20px;color:#f4f7ff;width:100%" data-node-id="9:15804">
+            价格碰到强平线，仓位被自动平掉
+          </p>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:16px;height:367px;align-items:center;padding-left:16px;padding-right:16px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15805" data-name="Demo2">
+          <div style="height:150px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15806" data-name="Demo">
+            <div style="position:absolute;height:150px;left:0;top:0;width:312px" data-node-id="9:15807" data-name="走势图">
+              <div style="position:absolute;inset:0 0 0 -0.32%">
+                <img alt="" style="display:block;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15795-img.svg" />
+              </div>
+            </div>
+            <div style="position:absolute;background:#232529;align-content:stretch;display:flex;align-items:flex-start;left:240px;overflow:hidden;padding-left:6px;padding-right:6px;padding-top:2px;padding-bottom:2px;border-radius:6px;top:8px" data-node-id="9:15817" data-name="标签-开仓">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:10px;color:#838a97;white-space:nowrap" data-node-id="9:15818">
+                开仓 60,000
+              </p>
+            </div>
+            <div style="position:absolute;background:#f53d55;align-content:stretch;display:flex;align-items:flex-start;left:242px;overflow:hidden;padding-left:6px;padding-right:6px;padding-top:2px;padding-bottom:2px;border-radius:6px;top:82px" data-node-id="9:15819" data-name="标签-强平">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:10px;color:white;white-space:nowrap" data-node-id="9:15820">
+                强平 54,300
+              </p>
+            </div>
+            <div style="position:absolute;background:#0f5efc;align-content:stretch;display:flex;align-items:flex-start;left:0;overflow:hidden;padding-left:6px;padding-right:6px;padding-top:2px;padding-bottom:2px;border-radius:6px;top:47px" data-node-id="9:15821" data-name="标签-止损">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:10px;color:white;white-space:nowrap" data-node-id="9:15822">
+                止损 57,000
+              </p>
+            </div>
+          </div>
+          <div style="align-content:stretch;display:flex;flex-direction:column;gap:6px;align-items:flex-start;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:15823" data-name="保证金余额">
+            <div style="align-content:stretch;display:flex;gap:8px;align-items:center;overflow:hidden;position:relative;flex-shrink:0;width:100%" data-node-id="9:15824" data-name="保证金行">
+              <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:12px;color:#838a97;white-space:nowrap" data-node-id="9:15825">
+                剩余保证金
+              </p>
+              <div style="flex:1 0 0;height:1px;min-width:1px;position:relative" data-node-id="9:15826" data-name="间距" ></div>
+              <div style="overflow-wrap:break-word;align-content:stretch;display:flex;align-items:baseline;line-height:1.4;overflow:hidden;position:relative;flex-shrink:0;white-space:nowrap" data-node-id="9:15827" data-name="保证金数值">
+                <p style="font-weight:600;position:relative;flex-shrink:0;font-size:14px;color:#f53d55" data-node-id="9:15828">
+                  0
+                </p>
+                <p style="font-weight:500;position:relative;flex-shrink:0;font-size:12px;color:#677080" data-node-id="9:15829"> USDT · 亏光</p>
+              </div>
+            </div>
+            <div style="background:#2e3035;height:8px;position:relative;border-radius:4px;flex-shrink:0;width:100%" data-node-id="9:15830" data-name="保证金条" ></div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:13px;color:#677080;width:100%" data-node-id="9:15831">
+            投入的 100 USDT 全部亏光。之后价格涨回来，也和你无关了。
+          </p>
+          <div style="overflow-wrap:break-word;background:#122522;align-content:stretch;display:flex;flex-direction:column;gap:2px;align-items:flex-start;line-height:1.4;overflow:hidden;padding-left:12px;padding-right:12px;padding-top:8px;padding-bottom:8px;position:relative;border-radius:12px;flex-shrink:0;width:100%" data-node-id="9:15832" data-name="止损对比">
+            <p style="font-weight:700;position:relative;flex-shrink:0;font-size:13px;color:#19b473;width:100%" data-node-id="9:15833">
+              如果开仓时设了止损 57,000
+            </p>
+            <p style="font-weight:400;position:relative;flex-shrink:0;font-size:12px;color:#f4f7ff;width:100%" data-node-id="9:15834">
+              跌 5% 就自动离场：亏 50，还剩 50 USDT。
+            </p>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15835">
+          <div style="height:8px;position:relative;flex-shrink:0;width:72px" data-node-id="9:15836" data-name="步骤进度 / 1 / 5">
+            <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15795-img15.svg" />
+          </div>
+          <div style="background:#fefefe;align-content:stretch;cursor:pointer;display:flex;flex-direction:column;gap:0px;height:40px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;position:relative;border-radius:8px;flex-shrink:0;width:100%" data-node-id="9:15842" data-name="*Button 按钮">
+            <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="I9:15842;7039:16105">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="I9:15842;4231:3323">
+                下一步
+              </p>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15843">
+            模拟行情仅作演示，不构成投资建议。
+          </p>
+        </div>
+      </div></section><section class="guide-page" data-guide="15844" aria-hidden="true"><div style="position:absolute;bottom:10.03px;align-content:stretch;display:flex;flex-direction:column;align-items:center;left:8px;overflow:hidden;padding-top:16px;border-radius:32px;width:359px" data-node-id="9:15848" data-name="交易引导弹窗 / 总结引导">
+        <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;inset:0;align-items:flex-start;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" data-node-id="9:15849" data-name="BG">
+          <div aria-hidden="true" style="position:absolute;background:#0d0d0d;inset:0;pointer-events:none;border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:34px;border-top-right-radius:34px" ></div>
+          <div style="position:absolute;align-content:stretch;display:flex;flex-direction:column;height:16px;align-items:center;left:0;padding-top:5px;right:0;top:0" data-node-id="I9:15849;2677:169219" data-name="Grabber">
+            <div  style="background:#ccc;height:4px;position:relative;border-radius:100px;flex-shrink:0;width:58px" ></div>
+          </div>
+          <div style="position:absolute;border-width:1px;border-style:solid;border-color:#ffffff24;inset:0;border-radius:34px" data-node-id="I9:15849;2899:135567" ></div>
+          <div style="position:absolute;inset:0;pointer-events:none;border-radius:inherit;box-shadow:inset 0px 1px 4px 0px rgba(255,255,255,0.15)" ></div>
+        </div>
+        <div style="align-content:stretch;display:flex;align-items:center;justify-content:space-between;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:13861" data-name="Nav">
+      <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#a9adb3;white-space:nowrap" data-node-id="9:13862">
+        什么是合约交易？
+      </p>
+    </div>
+        <div style="align-content:stretch;display:flex;align-items:center;padding:16px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15851">
+          <p style="overflow-wrap:break-word;font-weight:600;line-height:1.4;position:relative;flex-shrink:0;font-size:20px;color:#f4f7ff;white-space:nowrap" data-node-id="9:15852">
+            交易前，记住这三点
+          </p>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;padding:16px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15853">
+          <div style="align-content:stretch;display:flex;gap:13px;align-items:flex-start;position:relative;flex-shrink:0" data-node-id="9:15854" data-name="要点 1 / 涨跌行情，都有交易机会">
+            <div style="position:relative;flex-shrink:0;width:42.082px;height:42.082px" data-node-id="9:15855">
+              <div style="position:absolute;left:0;width:42.082px;height:42.082px;top:0" data-node-id="9:15856" data-name="图标底圆">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15844-img.svg" />
+              </div>
+              <div style="--tx:-50%;--ty:-50%;position:absolute;height:28.692px;left:calc(50% + 0.42px);overflow:hidden;top:calc(50% + 0.34px);width:26.779px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15857" data-name="可编辑要点图标">
+                <div style="position:absolute;inset:16.67% 3.57%" data-node-id="9:15858" data-name="Group">
+                  <div style="position:absolute;inset:-4.5% -3.46%">
+                    <img alt="" style="display:block;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15844-imgGroup.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;gap:11px;align-items:flex-start;line-height:1.4;position:relative;flex-shrink:0;width:262.056px" data-node-id="9:15860">
+              <p style="font-weight:600;position:relative;flex-shrink:0;font-size:16px;color:#f4f7ff;width:100%" data-node-id="9:15861">
+                涨跌行情，都有交易机会
+              </p>
+              <p style="font-weight:400;position:relative;flex-shrink:0;font-size:12px;color:#838a97;width:100%" data-node-id="9:15862">
+                看涨可做多，看跌可做空。方向判断正确，才有机会盈利。
+              </p>
+            </div>
+          </div>
+          <div style="align-content:stretch;display:flex;gap:13px;align-items:flex-start;position:relative;flex-shrink:0" data-node-id="9:15863" data-name="要点 2 / 杠杆会同时放大盈亏">
+            <div style="position:relative;flex-shrink:0;width:42.082px;height:42.082px" data-node-id="9:15864">
+              <div style="position:absolute;left:0;width:42.082px;height:42.082px;top:0" data-node-id="9:15865" data-name="图标底圆">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15844-img.svg" />
+              </div>
+              <div style="position:absolute;height:28.692px;left:9.02px;overflow:hidden;top:8.61px;width:26.779px" data-node-id="9:15866" data-name="可编辑要点图标">
+                <div style="position:absolute;inset:3.33% 17.86%" data-node-id="9:15867" data-name="Group">
+                  <div style="position:absolute;inset:-3.21% -5%">
+                    <img alt="" style="display:block;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15844-imgGroup1.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;gap:11px;align-items:flex-start;line-height:1.4;position:relative;flex-shrink:0;width:262.056px" data-node-id="9:15869">
+              <p style="font-weight:600;position:relative;flex-shrink:0;font-size:16px;color:#f4f7ff;width:100%" data-node-id="9:15870">
+                杠杆会同时放大盈亏
+              </p>
+              <p style="font-weight:400;position:relative;flex-shrink:0;font-size:12px;color:#838a97;width:100%" data-node-id="9:15871">
+                以 10 倍杠杆为例，价格变动 1%，保证金的盈亏约为 10%。
+              </p>
+            </div>
+          </div>
+          <div style="align-content:stretch;display:flex;gap:13px;align-items:flex-start;position:relative;flex-shrink:0" data-node-id="9:15872" data-name="要点 3 / 控制风险，留意强平线">
+            <div style="position:relative;flex-shrink:0;width:42.082px;height:42.082px" data-node-id="9:15873">
+              <div style="position:absolute;left:0;width:42.082px;height:42.082px;top:0" data-node-id="9:15874" data-name="图标底圆">
+                <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15844-img.svg" />
+              </div>
+              <div style="--tx:-50%;--ty:-50%;position:absolute;height:28.692px;left:calc(50% + 0.42px);overflow:hidden;top:calc(50% + 0.34px);width:26.779px;transform:translate(var(--tx,0),var(--ty,0))" data-node-id="9:15875" data-name="可编辑要点图标">
+                <div style="position:absolute;inset:6.67% 14.29% 3.33% 14.29%" data-node-id="9:15876" data-name="Group">
+                  <div style="position:absolute;inset:-3.33% -4.5%">
+                    <img alt="" style="display:block;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15844-imgGroup2.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="overflow-wrap:break-word;align-content:stretch;display:flex;flex-direction:column;gap:11px;align-items:flex-start;line-height:1.4;position:relative;flex-shrink:0;width:262.056px" data-node-id="9:15878">
+              <p style="font-weight:600;position:relative;flex-shrink:0;font-size:16px;color:#f4f7ff;width:100%" data-node-id="9:15879">
+                控制风险，设置止盈止损
+              </p>
+              <p style="font-weight:400;position:relative;flex-shrink:0;font-size:12px;color:#838a97;width:100%" data-node-id="9:15880">
+                从低杠杆开始，提前设置止损，避免单笔交易耗尽全部保证金。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="align-content:stretch;display:flex;flex-direction:column;gap:16px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px;position:relative;flex-shrink:0;width:100%" data-node-id="9:15881">
+          <div style="height:8px;position:relative;flex-shrink:0;width:72px" data-node-id="9:15882" data-name="步骤进度 / 1 / 5">
+            <img alt="" style="position:absolute;display:block;inset:0;max-width:none;width:100%;height:100%" src="lite-assets/scan9-15844-img15.svg" />
+          </div>
+          <div style="background:#fefefe;align-content:stretch;cursor:pointer;display:flex;flex-direction:column;gap:0px;height:40px;align-items:center;justify-content:center;padding-left:16px;padding-right:16px;position:relative;border-radius:8px;flex-shrink:0;width:100%" data-node-id="9:15888" data-name="*Button 按钮">
+            <div style="align-content:stretch;display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0" data-node-id="I9:15888;7039:16105">
+              <p style="overflow-wrap:break-word;font-weight:500;line-height:1.4;position:relative;flex-shrink:0;font-size:14px;color:#1e2127;text-align:center;white-space:nowrap" data-node-id="I9:15888;4231:3323">
+                开始我的第一笔合约交易
+              </p>
+            </div>
+          </div>
+          <p style="overflow-wrap:break-word;font-weight:400;line-height:1.4;position:relative;flex-shrink:0;font-size:9px;color:#a9adb3;text-align:center;white-space:nowrap" data-node-id="9:15889">
+            模拟行情仅作演示，不构成投资建议。
+          </p>
+        </div>
+      </div></section></div></div><div class="toast">此操作将在后续页面演示</div></div></div><script>
 function fit(){const mobile=window.innerWidth<=420;const w=mobile?Math.min(375,window.innerWidth):Math.min(375,(window.innerHeight-32)*375/812);const z=w/375,phone=document.querySelector('.phone');phone.style.width=w+'px';phone.style.height=(mobile?window.innerHeight:812*z)+'px';for(const sel of ['.page','.fixed','.sticky-pair'])document.querySelector(sel).style.zoom=z}fit();window.addEventListener("resize",fit);const low=80771.38,high=81892.58;let n=81500,tick=0,vol=108839.837,drift=0;
 const format=v=>Number(v).toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1});
 const tail=document.querySelector('#tail'),tc=tail.getContext('2d');let tailValues=[18,17,18,17,19,18,20,22,19,18,19,20,22,21,23,22,23,24,23];
@@ -102,18 +980,18 @@ const cells=[...book.children].map(r=>[...r.children]);
 function paintTail(){tc.clearRect(0,0,38,54);tc.beginPath();tailValues.forEach((y,i)=>{const x=i*2;i?tc.lineTo(x,y):tc.moveTo(x,y)});tc.lineTo(36,52);tc.lineTo(0,52);tc.closePath();const g=tc.createLinearGradient(0,8,0,53);g.addColorStop(0,'rgba(25,180,115,.18)');g.addColorStop(1,'rgba(25,180,115,0)');tc.fillStyle=g;tc.fill();tc.beginPath();tailValues.forEach((y,i)=>{const x=i*2;i?tc.lineTo(x,y):tc.moveTo(x,y)});tc.strokeStyle='#19b473';tc.lineWidth=1.3;tc.stroke()}
 function update(){drift=drift*.73+(Math.random()-.5)*3.4-(n-81500)*.003;n=Math.max(low+3,Math.min(high-3,n+drift));vol+=Math.random()*.035;tick++;
 const pct=(n-low)/(high-low),x=319*pct;
-document.querySelector('#rangevalue').textContent='$'+n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});document.querySelector('#rangevalue').style.left=(12+Math.max(0,Math.min(257,x-31)))+'px';document.querySelector('#barfill').style.width=(pct*100)+'%';document.querySelector('#rangemarker').style.left=(x-3.5)+'px';document.querySelector('#price').textContent=format(n);document.querySelector('.sticky-price').textContent=format(n);document.querySelector('#chartprice').textContent=format(n);
+document.querySelector('#rangevalue').textContent=format(n);document.querySelector('#rangevalue').style.left=(12+Math.max(0,Math.min(257,x-31)))+'px';document.querySelector('#barfill').style.width=(pct*100)+'%';document.querySelector('#rangemarker').style.left=Math.max(0,Math.min(318,x-.5))+'px';document.querySelector('#price').textContent=format(n);document.querySelector('.sticky-price').textContent=format(n);document.querySelector('#chartprice').textContent=format(n);
 const change=(n/81353.6-1)*100;document.querySelectorAll('.live>span:last-child').forEach(el=>el.textContent=(change>=0?'+':'')+change.toFixed(2)+'%');
 const pnl=20+(n-81500)*.06,roi=8.37+(n-81500)*.006;document.querySelector('#profit').textContent=(pnl>=0?'+':'')+pnl.toFixed(1)+' USDT';document.querySelector('#pct').textContent=(roi>=0?'+':'')+roi.toFixed(2)+'%';document.querySelector('#volume').textContent=vol.toLocaleString('en-US',{minimumFractionDigits:3,maximumFractionDigits:3});
 tailValues.shift();tailValues.push(Math.max(6,Math.min(42,24-(n-81500)/7)));paintTail();document.querySelector('.dot').style.top=(72+tailValues.at(-1)-1)+'px';document.querySelector('#chartprice').style.top=(72+tailValues.at(-1)-7)+'px';
 if(tick%3===0){const i=Math.floor(Math.random()*sizes.length);sizes[i]=(Math.random()*1.8+.001).toFixed(3)}
 for(let i=0;i<18;i++){const values=[sizes[i],format(n-.3-i*.86),format(n+.3+i*.86),(((i*7+Math.floor(tick/4))%19+1)/1000).toFixed(3)];values.forEach((v,j)=>{if(cells[i][j].textContent!==v)cells[i][j].textContent=v})}}
 update();setInterval(()=>{if(!document.hidden)update()},650);
-document.querySelector('.scroller').addEventListener('scroll',e=>document.querySelector('.sticky-pair').classList.toggle('visible',e.target.scrollTop>100));document.querySelectorAll('.period button').forEach(b=>b.onclick=()=>{document.querySelector('.period .on').classList.remove('on');b.classList.add('on')});document.querySelectorAll('.pill,.tab:not(.active)').forEach(b=>b.onclick=()=>{let h=document.querySelector('.toast');h.classList.add('show');setTimeout(()=>h.classList.remove('show'),1800)});
+document.querySelector('.scroller').addEventListener('scroll',e=>document.querySelector('.sticky-pair').classList.toggle('visible',e.target.scrollTop>100));document.querySelectorAll('.period button[data-period]').forEach(b=>b.onclick=()=>{document.querySelector('.period .on').classList.remove('on');b.classList.add('on')});document.querySelectorAll('.pill,.tab:not(.active)').forEach(b=>b.onclick=()=>{let h=document.querySelector('.toast');h.classList.add('show');setTimeout(()=>h.classList.remove('show'),1800)});
 // Shared trading state for the two demo layouts.
 window.demoTrade = (() => {
  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
- const state={amount:'',side:'long',leverage:2,margin:'逐仓',allContracts:false,percent:true,page:'entry',anchor:81500,leverageDraft:2,marginDraft:'逐仓',targetProfit:'',targetLoss:'',savedProfit:0,savedLoss:0,source:'trade',sheet:null};
+ const state={amount:'',side:'long',leverage:2,margin:'全仓',allContracts:false,percent:true,page:'entry',anchor:81500,leverageDraft:2,marginDraft:'逐仓',targetProfit:'',targetLoss:'',savedProfit:0,savedLoss:0,source:'trade',sheet:null};
  const defaults={percent:[25,50,75,100],fixed:[100,200,500,1000]};
  let presets={percent:[...defaults.percent],fixed:[...defaults.fixed]},editingMode='percent';
  try{const saved=JSON.parse(localStorage.getItem('demo-quick-values-v1'));for(const mode of ['percent','fixed'])if(Array.isArray(saved?.[mode])&&saved[mode].length===4&&saved[mode].every(v=>Number.isFinite(v)&&v>0&&v<=(mode==='percent'?100:6938)))presets[mode]=saved[mode]}catch{}
@@ -140,8 +1018,13 @@ window.demoTrade = (() => {
  const measured=amountMeasure.offsetWidth,size=Math.min(56,Math.floor(56*available/Math.max(1,measured)*10)/10);el.style.fontSize=size+'px';amountFitCache.set(el,key);
  }
  document.fonts.ready.then(()=>{amountFitCache.delete($('#amount'));amountFitCache.delete($('.confirmamount'));sync()});
- function setAmount(v){state.amount=sanitize(v,13);$('#amount').value=state.amount;$('.amount-error').textContent='';$('#amount').removeAttribute('aria-invalid');sync()}
- function pressKey(k){if(k==='delete')setAmount(state.amount.slice(0,-1));else if(k==='.'&&state.amount.includes('.'))return;else setAmount(state.amount+k)}
+ function setAmount(v){state.amount=sanitize(v,13);if($('#amount').value!==state.amount)$('#amount').value=state.amount;$('.amount-error').textContent='';$('#amount').removeAttribute('aria-invalid');sync()}
+ function focusAmount(caret){const input=$('#amount');input.focus({preventScroll:true});const position=Math.min(caret??state.amount.length,state.amount.length);input.setSelectionRange(position,position)}
+ function pressKey(k){const input=$('#amount'),focused=document.activeElement===input;let start=focused?(input.selectionStart??state.amount.length):state.amount.length,end=focused?(input.selectionEnd??start):start;const key=k==='delete'?'':k;
+ if(k==='delete'&&start===end)start=Math.max(0,start-1);
+ const remaining=state.amount.slice(0,start)+state.amount.slice(end);if(k==='.'&&remaining.includes('.')){focusAmount(start);return}
+ setAmount(state.amount.slice(0,start)+key+state.amount.slice(end));focusAmount(start+key.length);
+ }
  function setSide(side){state.side=side;sync()}
  function setMode(percent){state.percent=percent;$('.mode-switch').classList.toggle('is-fixed',!percent);$('[data-action=percent-mode]').setAttribute('aria-pressed',String(percent));$('[data-action=fixed-mode]').setAttribute('aria-pressed',String(!percent));$$('[data-quick]').forEach((b,i)=>{b.textContent=presets[percent?'percent':'fixed'][i]+(percent?'%':'U')})}
  function editQuick(){editingMode=state.percent?'percent':'fixed';$('.quick-description').textContent=state.percent?'设置四个快捷比例（0–100%）':'设置四个快捷金额（0–6,938 USDT）';$$('[data-quick-input]').forEach((input,i)=>input.value=presets[editingMode][i]);$$('.quick-unit').forEach(el=>el.textContent=state.percent?'%':'U');$('.quick-error').textContent='';openSheet('quick','trade')}
@@ -162,14 +1045,15 @@ window.demoTrade = (() => {
 
  }
  setInterval(()=>{if(!document.hidden)sync()},650);
- function openSheet(kind,source){lastFocus=document.activeElement;state.source=source||state.source;if(kind==='leverage'){state.leverageDraft=state.source==='base'?Number($('.form-top button:last-child').textContent.replace(/\D/g,''))||state.leverage:state.leverage;renderLeverage()}if(kind==='margin'){state.marginDraft=state.margin;renderMargin()}if(kind==='targets'){if(state.page==='entry')state.anchor=n;state.targetProfit=state.savedProfit?String(state.savedProfit):'';state.targetLoss=state.savedLoss?String(state.savedLoss):'';$('#target-profit').value=state.targetProfit?'+'+plain(state.targetProfit):'';$('#target-loss').value=state.targetLoss?'-'+plain(state.targetLoss):'';renderTargets()}
+ function openSheet(kind,source){lastFocus=document.activeElement;state.source=source||state.source;if(kind==='leverage'){state.leverageDraft=state.source==='base'?Number($('.form-top button:last-child').textContent.replace(/\D/g,''))||state.leverage:state.leverage;if(state.source==='position')state.leverageDraft=Number($('.position-lev span').textContent.replace(/\D/g,''))||40;renderLeverage()}if(kind==='margin'){state.marginDraft=state.margin;renderMargin()}if(kind==='targets'){if(state.page==='entry')state.anchor=n;state.targetProfit=state.savedProfit?String(state.savedProfit):'';state.targetLoss=state.savedLoss?String(state.savedLoss):'';$('#target-profit').value=state.targetProfit?'+'+plain(state.targetProfit):'';$('#target-loss').value=state.targetLoss?'-'+plain(state.targetLoss):'';renderTargets()}
  state.sheet=kind;closeSettings();layer.inert=false;layer.classList.add('open');layer.setAttribute('aria-hidden','false');for(const el of $$('.u-sheet')){el.classList.toggle('active',el.dataset.sheet===kind);el.setAttribute('aria-hidden',String(el.dataset.sheet!==kind))}fitViews();}
  function dismissModal(restore=true){if(layer.contains(document.activeElement))document.activeElement.blur();layer.inert=true;state.sheet=null;layer.classList.remove('open');layer.setAttribute('aria-hidden','true');$$('.u-sheet').forEach(el=>{el.classList.remove('active','dragging');el.style.transform='';el.setAttribute('aria-hidden','true')});if(restore&&lastFocus?.isConnected)lastFocus.focus({preventScroll:true});}
  function updateLeverage(v){state.leverageDraft=Math.max(1,Math.min(200,Math.round(v)));renderLeverage()}
  function renderLeverage(){let v=state.leverageDraft;$('#leverage-value').textContent=v;$('#leverage-range').value=v;$('.leverage-sheet').classList.toggle('risky',v>10);const ratio=(v-1)/199,position=34+ratio*273;$('#leverage-range').value=(position-10)/299*1000;$('#leverage-range').style.setProperty('--progress',((position/319)*100)+'%');$('.leverage-thumb').style.left=(position-15)+'px';$('.leverage-thumb-detail').style.left=(position-3)+'px';$$('[data-leverage]').forEach(b=>b.classList.toggle('selected',Number(b.dataset.leverage)===v));}
  function renderMargin(){$$('[data-margin]').forEach(el=>{let selected=el.dataset.margin===state.marginDraft;el.classList.toggle('selected',selected);el.setAttribute('aria-checked',String(selected))});$('.all-contracts').setAttribute('aria-checked',String(state.allContracts));}
- function renderTargets(){const base=amount()||100.01,qty=base*state.leverage/state.anchor,dir=state.side==='long'?1:-1;const tp=Math.abs(Number(state.targetProfit)||0),sl=Math.abs(Number(state.targetLoss)||0);$('.tp-trigger').textContent=f2(state.anchor+dir*tp/qty);$('.sl-trigger').textContent=f2(Math.max(0,state.anchor-dir*sl/qty));$('.tp-trigger').parentElement.style.visibility=tp>0?'visible':'hidden';$('.sl-trigger').parentElement.style.visibility=sl>0?'visible':'hidden';$$('[data-target]').forEach(b=>{let value=base*Number(b.dataset.roi)/100;const signed=b.dataset.target==='profit'?'+':'-';b.querySelector('span').textContent=signed+plain(value)+'U';b.classList.toggle('selected',Math.abs(value-(b.dataset.target==='profit'?tp:sl))<.011)});$('[data-action=apply-targets]').disabled=false}
- function applyLeverage(){state.leverage=state.leverageDraft;if(state.source==='base')$('.form-top button:last-child').textContent=state.leverage+'X';dismissModal();sync();}
+ function targetQuickValue(base,roi){const raw=base*roi/100;return raw>=10?Math.round(raw):Math.round(raw*10)/10}
+ function renderTargets(){const base=amount()||100.01,qty=base*state.leverage/state.anchor,dir=state.side==='long'?1:-1;const tp=Math.abs(Number(state.targetProfit)||0),sl=Math.abs(Number(state.targetLoss)||0);$('.tp-trigger').textContent=f2(state.anchor+dir*tp/qty);$('.sl-trigger').textContent=f2(Math.max(0,state.anchor-dir*sl/qty));$('.tp-trigger').parentElement.style.visibility=tp>0?'visible':'hidden';$('.sl-trigger').parentElement.style.visibility=sl>0?'visible':'hidden';$$('[data-target]').forEach(b=>{let value=targetQuickValue(base,Number(b.dataset.roi));const signed=b.dataset.target==='profit'?'+':'-';b.querySelector('span').textContent=signed+plain(value)+'U';b.querySelector('small').textContent=b.dataset.roi+'%';b.disabled=value<=0;b.classList.toggle('selected',Math.abs(value-(b.dataset.target==='profit'?tp:sl))<.011)});$('[data-action=apply-targets]').disabled=false}
+ function applyLeverage(){state.leverage=state.leverageDraft;if(state.source==='position')$('.position-lev span').textContent=state.leverage+'X';if(state.source==='base')$('.form-top button:last-child').textContent=state.leverage+'X';dismissModal();sync();}
  function applyMargin(){state.margin=state.marginDraft;$('.form-top button:first-child').textContent=state.margin;dismissModal();sync();}
  function applyTargets(){state.savedProfit=Math.abs(Number(state.targetProfit)||0);state.savedLoss=Math.abs(Number(state.targetLoss)||0);dismissModal();sync();if(state.source==='base')$('.stop-check input').checked=!!(state.savedProfit||state.savedLoss);}
  function hideOrderBanner(){clearTimeout(bannerTimer);clearTimeout(bannerDelay);$('.order-banner').classList.remove('show');$('.order-banner').setAttribute('aria-hidden','true')}
@@ -188,13 +1072,15 @@ window.demoTrade = (() => {
  knob.addEventListener('pointerup',endSwipe);knob.addEventListener('pointercancel',()=>resetSwipe());rail.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();completeOrder()}});
  // Sheets follow the finger; a downward flick or a deliberate pull dismisses them.
  $$('.sheet-grab').forEach(handle=>{let drag=null;const sheet=handle.closest('.u-sheet');handle.addEventListener('pointerdown',e=>{if(e.button!==0)return;e.preventDefault();handle.setPointerCapture(e.pointerId);drag={y:e.clientY,t:performance.now(),id:e.pointerId,dy:0};sheet.classList.add('dragging')});handle.addEventListener('pointermove',e=>{if(!drag||drag.id!==e.pointerId)return;const scale=modalStage.getBoundingClientRect().width/375,dy=(e.clientY-drag.y)/scale;drag.dy=dy;sheet.style.transform=`translateY(${dy<0?dy*.12:dy}px)`});const end=e=>{if(!drag||drag.id!==e.pointerId)return;const close=drag.dy>85||(drag.dy>20&&drag.dy/(performance.now()-drag.t)>.55);drag=null;sheet.classList.remove('dragging');if(close)dismissModal();else sheet.style.transform=''};handle.addEventListener('pointerup',end);handle.addEventListener('pointercancel',()=>{drag=null;sheet.classList.remove('dragging');sheet.style.transform=''})});
+ // Custom keypad presses must not move focus from the editable amount to a button.
+ $$('.keypad [data-key],[data-quick]').forEach(button=>button.addEventListener('pointerdown',e=>{if(e.button!==0)return;e.preventDefault();if(document.activeElement!==$('#amount'))focusAmount()}));
  $('#amount').addEventListener('input',e=>setAmount(e.target.value));$('#amount').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();goConfirm()}});
  $('#leverage-range').addEventListener('input',e=>updateLeverage(1+199*((10+Number(e.target.value)*.299)-34)/273));
  for(const type of ['profit','loss'])$('#target-'+type).addEventListener('input',e=>{state[type==='profit'?'targetProfit':'targetLoss']=sanitize(e.target.value);renderTargets()});
  for(const type of ['profit','loss'])$('#target-'+type).addEventListener('blur',e=>{let val=Number(state[type==='profit'?'targetProfit':'targetLoss']);e.target.value=val?(type==='profit'?'+':'-')+plain(val):''});
  document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(state.sheet)dismissModal();else if($('.settings-pop').classList.contains('open'))closeSettings();else if(flow.classList.contains('open'))state.page==='confirm'?setPage('entry'):closeFlow();return}if(e.key==='Tab'&&state.sheet){const current=$('.u-sheet.active'),items=[...current.querySelectorAll('button:not(:disabled),input,[tabindex="0"]')];if(!items.length)return;const first=items[0],last=items.at(-1);if(!current.contains(document.activeElement)){e.preventDefault();(e.shiftKey?last:first).focus()}else if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
  document.addEventListener('click',e=>{const b=e.target.closest('button,[data-margin]');if(!b)return;const a=b.dataset.action;
- if(b.dataset.key!==undefined){pressKey(b.dataset.key);return}if(b.dataset.quick!==undefined){const i=Number(b.dataset.quick);setAmount((state.percent?6938*presets.percent[i]/100:presets.fixed[i]).toFixed(2));return}if(b.dataset.leverage){updateLeverage(Number(b.dataset.leverage));return}if(b.dataset.step){updateLeverage(state.leverageDraft+Number(b.dataset.step));return}if(b.dataset.example){b.closest('.margin-option').classList.toggle('expanded');return}if(b.dataset.margin){state.marginDraft=b.dataset.margin;renderMargin();return}if(b.dataset.target){const base=amount()||100.01,value=base*Number(b.dataset.roi)/100;state[b.dataset.target==='profit'?'targetProfit':'targetLoss']=value.toFixed(2);$('#target-'+b.dataset.target).value=(b.dataset.target==='profit'?'+':'-')+plain(value);renderTargets();return}
+ if(b.dataset.key!==undefined){pressKey(b.dataset.key);return}if(b.dataset.quick!==undefined){const i=Number(b.dataset.quick);setAmount((state.percent?6938*presets.percent[i]/100:presets.fixed[i]).toFixed(2));focusAmount();return}if(b.dataset.leverage){updateLeverage(Number(b.dataset.leverage));return}if(b.dataset.step){updateLeverage(state.leverageDraft+Number(b.dataset.step));return}if(b.dataset.example){b.closest('.margin-option').classList.toggle('expanded');return}if(b.dataset.margin){state.marginDraft=b.dataset.margin;renderMargin();return}if(b.dataset.target){const base=amount()||100.01,value=targetQuickValue(base,Number(b.dataset.roi)),key=b.dataset.target==='profit'?'targetProfit':'targetLoss',clear=Math.abs(Number(state[key])-value)<.001;state[key]=clear?'':value.toFixed(2);$('#target-'+b.dataset.target).value=clear?'':(b.dataset.target==='profit'?'+':'-')+plain(value);renderTargets();return}
  switch(a){case'back':state.page==='confirm'?setPage('entry'):closeFlow();break;case'settings':settings();break;case'long':case'short':setSide(a);break;case'leverage':openSheet('leverage','trade');break;case'margin':openSheet('margin','trade');break;case'stops':openSheet('targets','trade');break;case'edit-quick':editQuick();break;case'save-quick':saveQuick();break;case'reset-quick':$$('[data-quick-input]').forEach((input,i)=>input.value=defaults[editingMode][i]);$('.quick-error').textContent='';break;case'percent-mode':setMode(true);break;case'fixed-mode':setMode(false);break;case'next':goConfirm();break;case'cancel':setPage('entry');break;case'apply-leverage':applyLeverage();break;case'apply-margin':applyMargin();break;case'apply-targets':applyTargets();break;case'dismiss-modal':dismissModal();break;case'capacity-info':notice('当前模拟档位最大持仓成本约 682,146 USDT',true);break;case'balance':notice('模拟可用余额：6,938 USDT');break;case'close-order-banner':hideOrderBanner();break;}
  if(!a&&flow.classList.contains('open')&&!b.closest('.settings-pop')&&!b.closest('.modal-layer'))closeSettings();
  });
@@ -254,15 +1140,77 @@ window.demoTrade = (() => {
  plane.inert=true;
  let pending=false;
  function render(){pending=false;const sourceRect=page.getBoundingClientRect(),buttonRect=button.getBoundingClientRect(),scale=buttonRect.width/100;if(!scale)return;
-  for(const [source,copy] of pairs){if(!source.childElementCount&&source.textContent!==copy.textContent)copy.textContent=source.textContent;if(source.style.cssText!==copy.style.cssText)copy.style.cssText=source.style.cssText;}
+  for(const [source,copy] of pairs){if(!source.childElementCount&&source.textContent!==copy.textContent)copy.textContent=source.textContent;if(source.className!==copy.className)copy.className=source.className;if(source.style.cssText!==copy.style.cssText)copy.style.cssText=source.style.cssText;}
   const x=(buttonRect.left-sourceRect.left)/scale,y=(buttonRect.top-sourceRect.top)/scale;
   plane.style.transform=`translate3d(${-x}px,${-y}px,0)`;
   button.classList.add('has-glass-scene');
  }
  function schedule(){if(!pending){pending=true;requestAnimationFrame(render)}}
- new MutationObserver(schedule).observe(page,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['style']});
+ new MutationObserver(schedule).observe(page,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['style','class']});
  scroller.addEventListener('scroll',schedule,{passive:true});new ResizeObserver(schedule).observe(document.querySelector('.phone'));
  document.fonts.ready.then(schedule);schedule();
+})();
+
+// Interactions for the revised Lite layout and the five-part beginner guide.
+(()=>{
+ const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
+ const page=q('.scroller .page'),book=q('.page>.book'),layer=q('.guide-layer'),stage=q('.guide-stage');
+ const tools=q('.scan9-tools');
+ const hint=text=>{const el=q('.toast');el.textContent=text;el.classList.add('show');clearTimeout(hint.timer);hint.timer=setTimeout(()=>el.classList.remove('show'),2000)};
+ function action(el,fn,label){if(!el)return;el.setAttribute('role','button');el.setAttribute('tabindex','0');if(label)el.setAttribute('aria-label',label);el.addEventListener('click',fn);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();fn(e)}})}
+ book.querySelector('.book-toggle').addEventListener('click',()=>{const expanded=book.classList.toggle('expanded');book.querySelector('.book-toggle').setAttribute('aria-expanded',String(expanded));page.style.setProperty('--book-extra',expanded?'436px':'0px')});
+ const positions=q('.page>.positions'),empty=document.createElement('div');empty.className='position-empty';empty.textContent='暂无当前委托';positions.append(empty);
+ qa('[data-position-tab]').forEach(b=>b.addEventListener('click',()=>{positions.classList.toggle('orders-view',b.dataset.positionTab==='orders');qa('[data-position-tab]').forEach(x=>x.classList.toggle('active',x===b))}));
+ let current='15560',previousFocus=null,frame=0,guideLeverage=10,guideScroll=0;
+ const guidePages=qa('.guide-page');
+ const guideSteps={'15560':1,'15591':2,'15623':3,'15661':3,'15699':4,'15745':4,'15795':4,'15844':5};
+ guidePages.forEach(p=>{const progress=p.querySelector('[data-name^="步骤进度"]');if(!progress)return;progress.classList.add('guide-progress');progress.setAttribute('role','img');progress.setAttribute('aria-label','第 '+guideSteps[p.dataset.guide]+' 步，共 5 步');progress.replaceChildren(...Array.from({length:5},(_,i)=>{const dot=document.createElement('span');dot.className='guide-progress-dot'+(i+1===guideSteps[p.dataset.guide]?' is-current':'');return dot}))});
+ function fit(){const z=Number(q('.page').style.zoom)||q('.phone').getBoundingClientRect().width/375;stage.style.transform=`scale(${z})`;stage.style.height=q('.phone').getBoundingClientRect().height/z+'px'}
+ new ResizeObserver(fit).observe(q('.phone'));window.addEventListener('resize',fit);fit();
+ function closeGuide(){cancelAnimationFrame(frame);guidePages.forEach(p=>{p.classList.remove('is-active');p.inert=true;p.setAttribute('aria-hidden','true')});layer.classList.remove('open');layer.setAttribute('aria-hidden','true');layer.inert=true;q('.scroller').inert=false;q('.fixed').inert=false;q('.scroller').scrollTo({top:guideScroll,behavior:'instant'});if(previousFocus?.isConnected)previousFocus.focus({preventScroll:true})}
+ function showGuide(id){current=id;cancelAnimationFrame(frame);guidePages.forEach(p=>{const active=p.dataset.guide===id;p.classList.toggle('is-active',active);p.inert=!active;p.setAttribute('aria-hidden',String(!active));p.classList.remove('replay')});
+ const active=q('.guide-page.is-active');if(['15560','15591'].includes(id))replay(active);if(['15623','15661'].includes(id))renderGuideLeverage(active);
+ }
+ function openGuide(){previousFocus=document.activeElement;guideScroll=q('.scroller').scrollTop;q('.scroller').scrollTo({top:0,behavior:'instant'});q('.sticky-pair').classList.remove('visible');fit();layer.inert=false;layer.classList.add('open');layer.setAttribute('aria-hidden','false');q('.scroller').inert=true;q('.fixed').inert=true;showGuide('15560')}
+ function replay(active){cancelAnimationFrame(frame);active.classList.remove('replay');void active.offsetWidth;active.classList.add('replay');const amount=[...active.querySelectorAll('p')].find(p=>/\+\d.*USDT/.test(p.textContent)),end=active.dataset.guide==='15560'?600.8:670.5,start=performance.now();
+ function tick(now){if(!layer.classList.contains('open')||active.dataset.guide!==current)return;const progress=Math.min(1,(now-start)/2300);if(amount)amount.textContent='+'+(end*progress).toFixed(1)+' USDT';if(progress<1)frame=requestAnimationFrame(tick)}frame=requestAnimationFrame(tick)}
+ function renderGuideLeverage(active){const num=[...active.querySelectorAll('p')].find(p=>/^\d+[×x]$/.test(p.textContent.trim())&&!p.parentElement.matches('[data-name="倍数选项"]'));if(num)num.textContent=guideLeverage+'×';
+ const result=active.querySelector('[data-name^="变化"]>p:last-child');if(result)result.textContent='$'+(active.dataset.guide==='15623'?100+5*guideLeverage:Math.max(0,100-10*guideLeverage));
+ const vals=[2,10,25,50,100],idx=vals.indexOf(guideLeverage),ratio=idx>=0?idx/4:(guideLeverage-2)/98;
+ const track=active.querySelector('[data-name="轨道"]');if(track){const thumb=track.querySelector('[data-name="滑块"]'),fill=track.querySelector('[data-name="轨道进度"]');if(thumb)thumb.style.left=`calc(12px + (100% - 24px) * ${ratio})`;if(fill)fill.style.width=ratio*100+'%';track.querySelector('input').value=idx>=0?idx:1}}
+ function next(){const route={'15560':'15591','15591':'15623','15623':'15699','15661':'15699','15699':'15745','15745':'15844','15795':'15844'};if(current==='15844'){closeGuide();window.demoTrade.openEntry();return}showGuide(route[current]||'15844')}
+ for(const p of guidePages){
+  const nextButton=p.querySelector('[data-name="*Button 按钮"]');action(nextButton,next,nextButton?.textContent.trim());
+  const replayButton=p.querySelector('[data-name="按钮 / 重播"]');if(replayButton)action(replayButton,()=>replay(p),'重播行情演示');
+  if(['15623','15661'].includes(p.dataset.guide)){
+   const track=p.querySelector('[data-name="轨道"]'),input=document.createElement('input');input.type='range';input.min='0';input.max='4';input.step='1';input.value='1';input.className='guide-range';input.setAttribute('aria-label','新手演示杠杆');track.append(input);input.addEventListener('input',()=>{guideLeverage=[2,10,25,50,100][Number(input.value)];renderGuideLeverage(p)});
+   const choices=p.querySelector('[data-name="倍数选项"]');if(choices)[...choices.children].forEach((el,i)=>action(el,()=>{guideLeverage=[2,10,25,50,100][i];renderGuideLeverage(p)}));
+   p.querySelectorAll('[data-name="*Segmented Control 滑块"]').forEach(el=>action(el,()=>showGuide(el.textContent.trim()==='开空'?'15661':'15623')));
+  }
+  const alternate=p.querySelector('[data-name="换个选择"]');if(alternate)action(alternate,()=>showGuide('15795'),'看看不加保证金会怎样');
+  const nav=p.querySelector('[data-name="Nav"]');let startY=0;if(nav){nav.addEventListener('pointerdown',e=>{startY=e.clientY;nav.setPointerCapture(e.pointerId)});nav.addEventListener('pointerup',e=>{if(e.clientY-startY>45)closeGuide()})}
+ }
+ layer.inert=true;q('.guide-mask').addEventListener('click',closeGuide);
+ document.addEventListener('keydown',e=>{if(!layer.classList.contains('open'))return;if(e.key==='Escape'){e.preventDefault();closeGuide()}if(e.key==='Tab'){const items=[...q('.guide-page.is-active').querySelectorAll('[tabindex="0"],input')];if(!items.length)return;const i=items.indexOf(document.activeElement);if(i<0||(!e.shiftKey&&i===items.length-1)||(e.shiftKey&&i===0)){e.preventDefault();(e.shiftKey?items.at(-1):items[0]).focus({preventScroll:true})}}});
+ tools.querySelectorAll('[data-name="工具/XABCD 形态"]').forEach(el=>{const name=el.textContent.trim();action(el,()=>{if(name==='新手指引')openGuide();else hint('该入口暂无后续演示页面')},name)});
+ q('.position-lev').addEventListener('click',()=>window.demoTrade.openSheet('leverage','position'));
+ const coupon=q('.coupon'),menu=q('.coupon-menu');coupon.addEventListener('click',()=>{menu.hidden=!menu.hidden;coupon.setAttribute('aria-expanded',String(!menu.hidden))});menu.querySelectorAll('[data-coupon]').forEach(b=>b.addEventListener('click',()=>{q('.coupon-value').textContent=Number(b.dataset.coupon)?'2USDT':'不使用';menu.hidden=true;coupon.setAttribute('aria-expanded','false')}));document.addEventListener('pointerdown',e=>{if(!e.target.closest('.coupon,.coupon-menu')){menu.hidden=true;coupon.setAttribute('aria-expanded','false')}});
+})();
+
+// Figma chart styles share one simulated market price; only the last candles are live.
+(()=>{
+ const page=document.querySelector('.scroller .page'),chart=page.querySelector('.chart'),toggle=page.querySelector('.chart-toggle'),view=chart.querySelector('.candle-view'),canvas=view.querySelector('canvas'),ctx=canvas.getContext('2d');
+ const anchor=n,offset=anchor-82121.1,max=82400+offset,min=81900+offset,y=v=>(max-v)/(max-min)*188;
+ view.querySelector('.candle-axis').replaceChildren(...Array.from({length:6},(_,i)=>{const el=document.createElement('span');el.textContent=format(max-i*100);return el}));
+ let mode=false,duration=60,started=Date.now(),open=anchor-8,hi=anchor+5,lo=anchor-14,completed={open:anchor-19,close:anchor-8,high:anchor-3,low:anchor-24};
+ function body(x,o,c,h,l){const color=c>=o?'#2ebd85':'#f53d55';ctx.strokeStyle=color;ctx.fillStyle=color;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x,y(h));ctx.lineTo(x,y(l));ctx.stroke();const top=Math.min(y(o),y(c)),height=Math.max(1,Math.abs(y(c)-y(o)));ctx.fillRect(x-1.7,top,3.4,height)}
+ function paint(){const now=Date.now();if(now-started>=duration*1000){completed={open,close:n,high:hi,low:lo};open=n;hi=n;lo=n;started=now}hi=Math.max(hi,n);lo=Math.min(lo,n);ctx.setTransform(2,0,0,2,0,0);ctx.clearRect(0,0,285,188);body(276,completed.open,completed.close,completed.high,completed.low);body(282,open,n,hi,lo);
+ view.querySelector('.candle-price').textContent=format(n);const remaining=Math.max(0,Math.ceil(duration-(now-started)/1000));view.querySelector('.candle-countdown').textContent=remaining>=3600?Math.floor(remaining/3600)+'h '+String(Math.floor(remaining%3600/60)).padStart(2,'0')+'m':String(Math.floor(remaining/60)).padStart(2,'0')+':'+String(remaining%60).padStart(2,'0');const badge=view.querySelector('.candle-current');const badgeTop=Math.max(0,Math.min(158,y(n)-15));badge.style.top=badgeTop+'px';const targetTop=Math.min(83,badgeTop-14);view.querySelector('.candle-takeprofit').style.top=targetTop+'px';view.querySelectorAll('.candle-axis span').forEach(el=>{const top=el.offsetTop;el.style.visibility=[[badgeTop,badgeTop+30],[targetTop,targetTop+14],[116,130]].some(([a,b])=>top+14>a&&top<b)?'hidden':'visible'});badge.classList.toggle('down',n<open);
+ }
+ function setMode(value){mode=value;page.classList.toggle('candle-mode',mode);toggle.setAttribute('aria-pressed',String(mode));toggle.setAttribute('aria-label',mode?'切换为趋势线':'切换为蜡烛图');view.setAttribute('aria-hidden',String(!mode));paint()}
+ toggle.addEventListener('click',()=>setMode(!mode));
+ const periods={'Time':60,'5m':300,'15m':900,'1h':3600,'1D':86400,'1W':604800,'1M':2592000};page.querySelectorAll('.period [data-period]').forEach(b=>b.addEventListener('click',()=>{duration=periods[b.dataset.period];started=Date.now();paint()}));
+ new MutationObserver(paint).observe(document.querySelector('#price'),{childList:true,characterData:true,subtree:true});setInterval(()=>{if(!document.hidden&&mode)paint()},1000);setMode(false);
 })();
 
 </script></body></html>
